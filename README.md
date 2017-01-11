@@ -34,21 +34,14 @@ Below is a basic rundown of the files in the app, and what they do.  This is mos
 
 ### There Is No "I" in UI...ummm, Nevermind
 
-1. The text is incredibly small on the Event Details screen.  Please make it bigger.  Bonus points if you can make it even bigger for mobile.
+1. The input label text is incredibly small on the Event Details screen.  Please make it bigger.  Bonus points if you can make the right size for mobile.
 2. The rows on the Event Review page are pretty squished.  Make them a consistent height, and improve their appearance as you see fit.
 3. The input field for the "Event Location" screen is in the wrong place.  Try to move it down *below* the map.
 4. The date/time bar on the "Event Times" screen should be fixed at the top of the screen.  Please shift the calendar so it is neither above nor behind it.
 
 **HARD**
 
-3. The Event Times screen on Mobile looks like a lion ate a zebra and threw it back up.  Please untangle this mess.
-
-**INCREDIBLY HARD**
-
-The issues below are only reproducible on small phone screens on certain browsers.  In order to reach the server, though, you need to run your server with IP address, not `localhost`.
-
-2. There is a random modal on some devices on the Event Details screen.  We should probably get rid of that.
-3. There is a similar problem on the Event Guests screen.
+3. The Event Times screen on some mobile screens looks like a lion ate a zebra and threw it back up.  Please untangle this mess.
 
 ### The Code We Deserve, but Not the Code We Need
 
@@ -56,16 +49,16 @@ There are a bunch of features the product has decided to abandon, but we still h
 
 1. The "Find an Event" button on the landing page, and the modal it pops up.
 2. The "Enable location sharing?" toggle button.
-3. The five-dot div above the four-dot div is confusing.  We can probably remove it.  Make sure you get rid of all its remnants, though.
 4. The "Event Type" section on the "Event Details" screen.
+3. The five-dot div above the four-dot div on the "Event Locations" screen is confusing.  We can probably remove it.  Make sure you get rid of all its remnants, though.
 
 ### Squashing Bugs
 
 Some things are just not working right.  See if you can make these things work.
 
-1. If you fixed the five-dot-div above, the text input on "Event Location" does not create a marker with the Google Places API.  It should.
+1. If you fixed the five-dot-div above, the text input on "Event Location" may not create a marker with the Google Places API. Make sure it does.
 2. If you change weeks on the "Event Times" screen, the divs are still highlighted.  Make sure that divs are highlighted only if they were selected (time-based not location-on-screen-based).
-3. The Login/Signup button on the main screen does not do anything.  Can you figure out what it's supposed to do?  Once you have, fix it up to be as functional as possible.
+3. The Login/Signup button on the landing page does not do anything.  Can you figure out what it's supposed to do?  Once you have, fix it up to be as functional as possible.
 
 ### All the Features!
 
@@ -92,10 +85,10 @@ To get this project started, you will need to do a few things first.
 2. Checkout the `starter-code` branch
 3. Checkout a new branch from this one with your first name
 4. In this new branch, navigate to `ionic/senseus` and start your web server.
-  4. Check this [documentation](http://ionicframework.com/docs/guide/testing.html) for advice on this.
+  4. Check this [documentation](http://ionicframework.com/docs/guide/testing.html) for how to do this.
   5. If prompted to select an address for the server, type `localhost`.
 5. If this does not open a version of the app, please ask an instructor for help.
-6. Navigate around the landing page, and the "Create an Event" workflow.  All of the problems to solve will be in those places.
+6. Navigate around the landing page, and the "Create an Event" workflow.  All of the problems listed above will be found in those places.
 
 ## General Advice
 
