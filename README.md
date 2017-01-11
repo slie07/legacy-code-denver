@@ -6,15 +6,19 @@
 
 You are currently interviewing for a new development team, and they are planning on releasing their new product in 3 months.  There's only one problem: their lead dev, Trevor, just left to travel around Southeast Asia and "find himself" and has been unreachable for weeks.  We have no idea when he will be back.
 
-Fortunately, one of your consultants was closely involved in the coding earlier.  He will introduce the code base and the problems he would like you to solve.  Since this would be your job for the next 3 months, he wants to make sure you can solve these problems.  If you do well on these problems, you may find yourself with a job offer.
+Fortunately, one of your instructors was closely involved in the coding earlier.  He will introduce the code base and the problems he would like you to solve.  Since this would be your job for the next 3 months, he wants to make sure you can solve these problems.  If you do well on this coding challenge, you may find yourself with a job offer.
 
-Solve as many of these problems as you can in whatever order you feel comfortable with.  Just like in any interview process, you should feel free to ask the consultants any questions you have, but they reserve the right to not answer them or answer them as cryptically as an interviewer would.
+Solve as many of these problems as you can in whatever order you feel comfortable with.  Just like in any interview process, you should feel free to ask the instructors any questions you have, but they reserve the right to not answer them or answer them as cryptically as an interviewer would.
 
-This exercise is competitive.  We will announce winners, so we recommend not asking your fellow devs for help.  However, Professor Google and Captain Stackoverflow's doors are always open, and you are encouraged to use any and all notes from them or from your former projects.
+Lean heavily on your fellow developers for second opinions on this challenge, but **no copying code**.  Also, Professor Google and Captain Stackoverflow's doors are always open, and you are encouraged to use any and all notes from them or from your former projects.
+
+As you work through these problems, use your commit messages to show your interviewers which problems you are solving, like so:
+
+`git commit -m "Making text the appropriate size on mobile from 'The Problems' section"`
 
 ## The Code
 
-Below is a basic rundown of the files in the app, and what they do.  This is mostly exhaustive of the code you will have to touch in this coding challenge, but perhaps not completely.  For any questions on file organization, please ask your consultants.  For any questions on what a line of code in a file is doing, follow the Read-Search-Ask pattern.
+Below is a basic rundown of the files in the app, and what they do.  This is mostly exhaustive of the code you will have to touch in this coding challenge, but perhaps not completely.  For any questions on file organization, please ask your instructors.  For any questions on what a line of code in a file is doing, follow the Read-Search-Ask pattern.
 
 1. Basically all code you need is in `ionic/senseus/www/`
 2. `index.html` includes all the outside resources and kicks off the show
@@ -90,7 +94,7 @@ To get this project started, you will need to do a few things first.
 4. In this new branch, navigate to `ionic/senseus` and start your web server.
   4. Check this [documentation](http://ionicframework.com/docs/guide/testing.html) for advice on this.
   5. If prompted to select an address for the server, type `localhost`.
-5. If this does not open a version of the app, please ask a consultant for help.
+5. If this does not open a version of the app, please ask an instructor for help.
 6. Navigate around the landing page, and the "Create an Event" workflow.  All of the problems to solve will be in those places.
 
 ## General Advice
