@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="static/js/user.js"></script>
+<link rel="stylesheet" type="text/css" href='static/css/main_screen.css'>
+<link rel="stylesheet" type="text/css" href='static/css/profile.css'>
+<script src="static/js/lib/jquery.min.js"></script>
+<script src="static/js/lib/moment.js"></script>
+<script src="static/js/lib/jquery.tokeninput.js"></script>
+<script src="static/js/lib/Dropdown.js"></script>
+<script src="static/js/lib/hammer.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+<script src="static/js/event_home.js"></script>
+<script src="static/js/event.js"></script>
+<script src="static/js/main_screen.js"></script>
+<script src="static/js/profile.js"></script>
+<script src="static/js/notifications.js"></script>
+<script src="static/js/circle.js"></script>
+<script src="static/js/utils.js"></script>
+<script src="static/js/conversation.js"></script>
+<script src="static/js/calendar.js"></script>
+<script src="static/js/url.js"></script>
+<link rel="stylesheet" type="text/css" href='static/css/calendar.css'>
+<link rel="stylesheet" type="text/css" href='static/css/conversations.css'>
+<link rel="stylesheet" type="text/css" href='static/css/create_event.css'>
+<link rel="stylesheet" type="text/css" href='static/css/event.css'>
+<link rel="stylesheet" type="text/css" href='static/css/circle.css'>
+<link rel="stylesheet" type="text/css" href='static/css/Dropdown.css'>
+<link rel="stylesheet" type="text/css" href='static/css/onoff.css'>
+<link rel="stylesheet" type="text/css" href='static/css/token-input-facebook.css'>
+<link rel="stylesheet" type="text/css" href='static/css/token-input.css'>
+</head>
+<body onload='loadFrontPage()'>
+<div id="main-window">
+<div id="customizable-screen">
+</div>
+<div id ='more-list-container' class='more-list-container'>
+<div id='more-profile'>Profile</div>
+<div id='more-circles'>Circles</div>
+<div id='more-settings'>Settings</div>
+</div>
+<div id="bottom-nav-bar">
+<div id="nav-events" class="nav-bar-links" onclick="loadEvents()">Events
+<div id='nav-notification-number' class="noti_bubble"></div>
+</div><div id="nav-activity" class="nav-bar-links" onclick="loadCurrentConversations()">Chat</div><div id ="nav-calendar" class="nav-bar-links" onclick="loadInitialCalendar()">Calendar</div><div id="nav-more" class="nav-bar-links" onclick="loadMore()">More
+</div>
+</div>
+</div>
+<script>
+    function loadMore(elm) {
+        $("#more-list-container").toggleClass('clicked-nav-more');
+    }
+    $('#more-profile').click(function(){
+        $("#more-list-container").toggleClass('clicked-nav-more');
+        loadProfile();
+    });
+    $('#more-settings').click(function(){
+        $("#more-list-container").toggleClass('clicked-nav-more');
+        loadSettings();
+    });
+    $('#more-circles').click(function(){
+        $("#more-list-container").toggleClass('clicked-nav-more');
+        loadCircles();
+    });
+</script>
+</body>
+</html>

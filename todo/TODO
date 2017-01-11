@@ -1,0 +1,312 @@
+push notifications. (M)
+Make things depend on onDeviceReady. (S)
+centralize update call to server. (H)
+replace event map with db call. (S)
+add profile image to sqlite. (M)
+add profile image to user_notifications, when creating. (S)
+save contacts to sqlite?. (S)
+
+conversations:
+    fix conversations.(H)
+    fetch image id if it exists.(M)
+    conversations search. (H)
+    conversations more.(H)
+    add notification sign for unread messages in conversations. (M)
+    add unread as a quality for notifications. (M)
+
+Phone:
+    fix font sizes on phone.(S)
+    fix facebook style notification. (S)
+    chat looks like crap on phone. (M)
+
+overall:
+    add friend feed.(H)
+    add global feed.(H)
+    enable location tracking and show on map.(H)
+    host shareable link. (M)
+    save profile image in localstorage.(M)
+    convert necessary columns to json.(S)
+    convert to moment!(M)
+    Venmo integration. (H)
+    Event Admin(H).
+    Circle Admin(H).
+    Event visitor(H).
+    Circle member.(H)
+    Create Backup script for code. (M)
+    Create backup script for db. (H)
+    fix event css.(M)
+    moment timezones(M).
+    zip js files. (M)
+    add senseus friends.(H)
+    add permissions based on senseus_ids. (H)
+    add permissions for conversations based on link and conversation participants. (H)
+    save UTC everywhere. (M)
+    non signed-in main screen. (M)
+
+calendar:
+    fix issue with day offset top.
+    make use of suggested-times.(M)
+    calendar panning, and additional dates. (M)
+    propose-times
+    add events to calendar.(H)
+    add events to month calendar(H).
+    add events to week calendar(H).
+    add events to day caledar(HH).
+    keep data selected when switching between DWM.(S)
+    highlight selectable class based on pre-loaded data.(S)
+    create recurring events. (H)
+    stop deleting the traversal divs. (S)
+
+profile:
+    improve profile.(M)
+
+my-events:
+    add back button.(H)
+
+events:
+    mark seen events as no longer new.(S)
+    add event to feed dynamically. (M)
+    create loop to fetch new events. (M)
+
+conversation_messages:
+    add text messages.(H)
+    fetch user image via profileImage.(M)
+    improve chat style.(M)
+
+circles:
+    clean-up circles page.(H)
+    link circles to circle profile page.(S)
+    add circle profile page.(M)
+    save circles in local storage.(M)
+    link feed message to circles.(M)
+    hook up create circle page to backend.(H)
+    fix invite friends part of create circles.(H)
+    fix create circles appearance.(H)
+    add circle header, like converstations. (S)
+
+settings:
+    make settings front-end better. (H)
+    add radio buttons for location and push. (S)
+    add update settings function on frontend. (S)
+
+main_screen:
+    fix historical-browsing.(H)
+
+invite_friends:
+    facebook invite-friends.(H)
+    fix invite-friends(H)
+    Ensure scrolling after reaching halfway screen point.(S)
+
+propose_locations:
+    propose-locations(H)
+    show location details after completion.
+
+event_home:
+    event-home created notification.(S)
+    add backend for events and activities. (S)
+    make activities voting work.(M)
+    make expenses voting work.(M)
+        add settle expenses button.(S)
+        add price of expense. (S)
+        add covered by. (S)
+
+    hook up schedule to live data.(M)
+    add default text for no activity.(S)
+    add default text for no expense.(S)
+
+Misc:
+    Fix firefox location bullshit.(H)
+    Consider overriding tab for jquery tokeninput. (H)
+
+Backend:
+    Create sessions for user.(H)
+    create cookies for user.(H)
+    add authentication.(H)
+    add endpoint authentication.(H)
+    change to https.(H)
+
+
+R̶o̶u̶n̶d̶e̶d̶ ̶c̶o̶r̶n̶e̶r̶s̶ ̶f̶o̶r̶ ̶e̶n̶d̶ ̶o̶f̶ ̶b̶o̶t̶t̶o̶m̶ ̶n̶a̶v̶.̶
+J̶S̶O̶N̶I̶f̶y̶ ̶p̶a̶r̶a̶m̶s̶ ̶b̶e̶f̶o̶r̶e̶ ̶p̶a̶s̶s̶i̶n̶g̶ ̶t̶o̶ ̶c̶r̶e̶a̶t̶e̶_̶e̶v̶e̶n̶t̶.̶
+C̶h̶a̶n̶g̶e̶ ̶n̶a̶v̶-̶b̶a̶r̶ ̶t̶o̶ ̶d̶i̶v̶s̶.̶
+d̶r̶a̶w̶ ̶w̶e̶e̶k̶-̶c̶a̶l̶e̶n̶d̶a̶r̶.̶
+H̶o̶o̶k̶ ̶u̶p̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶d̶a̶t̶a̶.̶
+f̶l̶e̶x̶-̶b̶o̶x̶
+e̶v̶e̶n̶t̶-̶n̶a̶m̶e̶
+C̶r̶e̶a̶t̶e̶ ̶b̶a̶c̶k̶e̶n̶d̶ ̶c̶r̶e̶a̶t̶e̶ ̶f̶o̶r̶ ̶e̶v̶e̶n̶t̶.̶
+C̶r̶e̶a̶t̶e̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶a̶l̶ ̶e̶v̶e̶n̶t̶ ̶f̶l̶o̶w̶ ̶i̶n̶ ̶f̶r̶o̶n̶t̶-̶e̶n̶d̶.̶
+a̶d̶d̶ ̶g̶a̶u̶g̶e̶ ̶f̶o̶r̶ ̶p̶r̶o̶g̶r̶e̶s̶s̶ ̶i̶n̶ ̶e̶v̶e̶n̶t̶ ̶c̶r̶e̶a̶t̶e̶.̶
+h̶o̶o̶k̶u̶p̶ ̶c̶r̶e̶a̶t̶e̶-̶e̶v̶e̶n̶t̶s̶.̶
+c̶r̶e̶a̶t̶e̶ ̶a̶d̶d̶-̶l̶o̶c̶a̶t̶i̶o̶n̶ ̶s̶e̶c̶t̶i̶o̶n̶.̶
+g̶e̶t̶ ̶a̶ ̶b̶e̶t̶t̶e̶r̶ ̶t̶o̶d̶o̶ ̶v̶i̶m̶ ̶p̶l̶u̶g̶i̶n̶.̶
+A̶d̶d̶ ̶f̶a̶c̶e̶b̶o̶o̶k̶ ̶t̶o̶ ̶l̶o̶g̶i̶n̶.̶
+f̶a̶c̶e̶b̶o̶o̶k̶ ̶s̶i̶g̶n̶-̶i̶n̶.̶
+e̶v̶e̶n̶t̶s̶:̶
+h̶o̶o̶k̶ ̶u̶p̶ ̶a̶c̶t̶u̶a̶l̶ ̶e̶v̶e̶n̶t̶s̶-̶l̶i̶s̶t̶.̶
+h̶o̶o̶k̶u̶p̶ ̶m̶y̶-̶e̶v̶e̶n̶t̶s̶.̶
+s̶y̶s̶t̶e̶m̶-̶c̶l̶i̶p̶b̶o̶a̶r̶d̶ ̶i̶n̶t̶e̶g̶r̶a̶t̶i̶o̶n̶.̶
+A̶d̶d̶ ̶f̶a̶c̶e̶b̶o̶o̶k̶ ̶s̶t̶y̶l̶e̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶.̶
+M̶a̶k̶e̶ ̶L̶o̶g̶i̶n̶ ̶s̶c̶r̶e̶e̶n̶ ̶l̶o̶o̶k̶ ̶d̶e̶c̶e̶n̶t̶.̶
+b̶e̶t̶t̶e̶r̶ ̶m̶o̶t̶i̶o̶n̶ ̶a̶f̶t̶e̶r̶ ̶m̶a̶r̶k̶i̶n̶g̶ ̶t̶o̶d̶o̶.̶
+h̶o̶o̶k̶ ̶u̶p̶ ̶m̶o̶r̶e̶-̶b̶u̶t̶t̶o̶n̶.̶
+a̶d̶d̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶p̶a̶g̶e̶.̶
+c̶r̶e̶a̶t̶e̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶c̶i̶r̶c̶l̶e̶s̶ ̶p̶a̶g̶e̶.̶
+e̶v̶e̶n̶t̶-̶h̶o̶m̶e̶
+e̶v̶e̶n̶t̶-̶s̶c̶h̶e̶d̶u̶l̶e̶
+a̶d̶d̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶c̶h̶a̶t̶ ̶p̶a̶g̶e̶.̶
+h̶o̶o̶k̶ ̶u̶p̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶p̶a̶g̶e̶ ̶t̶o̶ ̶a̶c̶t̶u̶a̶l̶l̶y̶ ̶s̶a̶v̶e̶ ̶c̶h̶a̶t̶.̶
+a̶d̶d̶ ̶m̶e̶s̶s̶a̶g̶i̶n̶g̶-̶s̶y̶s̶t̶e̶m̶.̶
+h̶o̶o̶k̶ ̶u̶p̶ ̶f̶a̶c̶e̶b̶o̶o̶k̶ ̶s̶t̶y̶l̶e̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶ ̶t̶o̶ ̶a̶c̶t̶u̶a̶l̶ ̶d̶a̶t̶a̶.̶
+a̶d̶d̶ ̶s̶c̶r̶o̶l̶l̶a̶b̶i̶l̶i̶t̶y̶.̶
+g̶e̶t̶ ̶e̶v̶e̶n̶t̶-̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶l̶i̶b̶r̶a̶r̶y̶.̶
+a̶d̶d̶ ̶s̶c̶r̶o̶l̶l̶i̶n̶g̶ ̶f̶o̶r̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶
+f̶i̶x̶ ̶e̶v̶e̶n̶t̶s̶ ̶a̶n̶d̶ ̶c̶i̶r̶c̶l̶e̶s̶ ̶c̶a̶l̶l̶.̶
+s̶w̶i̶t̶c̶h̶ ̶t̶o̶ ̶f̶l̶e̶x̶b̶o̶x̶.̶
+p̶r̶o̶f̶i̶l̶e̶:̶
+l̶i̶n̶k̶ ̶e̶v̶e̶n̶t̶ ̶l̶i̶s̶t̶s̶ ̶t̶o̶ ̶e̶v̶e̶n̶t̶.̶
+e̶v̶e̶n̶t̶-̶e̶x̶p̶e̶n̶s̶e̶s̶
+l̶i̶n̶k̶ ̶f̶e̶e̶d̶ ̶m̶e̶s̶s̶a̶g̶e̶ ̶t̶o̶ ̶e̶v̶e̶n̶t̶.̶
+a̶d̶d̶ ̶o̶n̶h̶o̶v̶e̶r̶ ̶h̶a̶n̶d̶.̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶ ̶e̶v̶e̶n̶t̶.̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶-̶c̶i̶r̶c̶l̶e̶ ̶l̶i̶n̶k̶.̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶-̶c̶i̶r̶c̶l̶e̶ ̶p̶a̶g̶e̶.̶
+ ̶ ̶ ̶ ̶m̶a̶k̶e̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶s̶c̶r̶o̶l̶l̶a̶b̶l̶e̶.̶
+ ̶ ̶ ̶ ̶h̶o̶o̶k̶ ̶u̶p̶ ̶e̶v̶e̶n̶t̶-̶h̶o̶m̶e̶ ̶t̶o̶ ̶l̶i̶v̶e̶ ̶d̶a̶t̶a̶.̶
+ ̶ ̶ ̶ ̶t̶i̶t̶l̶e̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶p̶r̶i̶n̶t̶i̶n̶g̶ ̶f̶u̶n̶c̶t̶i̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶e̶v̶e̶n̶t̶s̶.̶ ̶(̶s̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶c̶i̶r̶c̶l̶e̶s̶.̶ ̶(̶s̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶s̶(̶s̶)̶.̶
+ ̶ ̶ ̶ ̶c̶e̶n̶t̶r̶a̶l̶i̶z̶e̶ ̶p̶r̶i̶n̶t̶i̶n̶g̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶ ̶w̶i̶t̶h̶ ̶i̶m̶a̶g̶e̶s̶ ̶o̶n̶ ̶s̶c̶r̶e̶e̶n̶.̶(̶M̶)̶:̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶M̶e̶s̶s̶a̶g̶e̶s̶(̶s̶)̶.̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶s̶ ̶f̶l̶e̶x̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶s̶p̶l̶i̶t̶ ̶m̶a̶i̶n̶_̶s̶c̶r̶e̶e̶n̶.̶j̶s̶ ̶i̶n̶t̶o̶ ̶d̶i̶f̶f̶e̶r̶e̶n̶t̶ ̶p̶a̶r̶t̶s̶(̶S̶)̶.̶
+ ̶ ̶ ̶ ̶c̶l̶i̶c̶k̶a̶b̶i̶l̶i̶t̶y̶.̶ ̶(̶S̶)̶
+n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶s̶:̶
+ ̶ ̶ ̶ ̶s̶a̶v̶e̶ ̶e̶v̶e̶n̶t̶s̶ ̶i̶n̶ ̶l̶o̶c̶a̶l̶ ̶s̶t̶o̶r̶a̶g̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶d̶r̶a̶w̶ ̶d̶a̶y̶-̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶d̶r̶a̶w̶ ̶m̶o̶n̶t̶h̶-̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶h̶a̶t̶ ̶s̶e̶n̶t̶ ̶t̶i̶m̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶i̶m̶a̶g̶e̶s̶ ̶f̶o̶r̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶m̶a̶k̶e̶ ̶m̶o̶n̶t̶h̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶s̶e̶l̶e̶c̶t̶a̶b̶l̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶m̶a̶k̶e̶ ̶d̶a̶y̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶s̶e̶l̶e̶c̶t̶a̶b̶l̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶A̶d̶d̶ ̶d̶a̶y̶ ̶a̶n̶d̶ ̶m̶o̶n̶t̶h̶ ̶s̶e̶l̶e̶c̶t̶o̶r̶s̶ ̶t̶o̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶o̶r̶m̶a̶t̶ ̶d̶a̶t̶e̶ ̶f̶o̶r̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶i̶m̶a̶g̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶l̶i̶n̶k̶ ̶s̶e̶l̶e̶c̶t̶o̶r̶ ̶e̶l̶e̶m̶e̶n̶t̶s̶ ̶t̶o̶ ̶c̶o̶r̶r̶e̶c̶t̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶g̶e̶t̶ ̶o̶n̶/̶o̶f̶f̶ ̶c̶s̶s̶ ̶s̶w̶i̶t̶c̶h̶.̶(̶M̶)̶
+u̶i̶:̶
+ ̶ ̶ ̶ ̶m̶a̶k̶e̶ ̶c̶s̶s̶ ̶o̶n̶/̶o̶f̶f̶ ̶s̶w̶i̶t̶c̶h̶ ̶c̶l̶a̶s̶s̶ ̶s̶p̶e̶c̶i̶f̶i̶c̶.̶(̶S̶)̶
+u̶i̶:̶
+ ̶ ̶ ̶ ̶r̶e̶p̶l̶a̶c̶e̶ ̶a̶u̶t̶o̶c̶o̶m̶p̶l̶e̶t̶e̶ ̶l̶i̶b̶ ̶w̶i̶t̶h̶ ̶a̶u̶t̶o̶c̶o̶m̶p̶l̶e̶t̶e̶.̶j̶s̶(̶M̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶e̶v̶e̶n̶t̶ ̶d̶e̶t̶a̶i̶l̶s̶ ̶w̶h̶e̶n̶ ̶g̶o̶i̶n̶g̶ ̶t̶o̶ ̶e̶v̶e̶n̶t̶-̶h̶o̶m̶e̶ ̶f̶r̶o̶m̶ ̶m̶y̶-̶e̶v̶e̶n̶t̶s̶.̶(̶s̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶e̶v̶e̶n̶t̶_̶h̶o̶m̶e̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶(̶S̶)̶.̶
+ ̶ ̶ ̶ ̶p̶r̶i̶n̶t̶ ̶d̶a̶y̶ ̶f̶o̶r̶ ̶d̶a̶y̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶p̶r̶i̶n̶t̶ ̶m̶o̶n̶t̶h̶ ̶f̶o̶r̶ ̶m̶o̶n̶t̶h̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶p̶r̶i̶n̶t̶ ̶w̶e̶e̶k̶ ̶f̶o̶r̶ ̶w̶e̶e̶k̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶p̶r̶e̶t̶t̶i̶f̶y̶ ̶s̶e̶l̶e̶c̶t̶o̶r̶ ̶f̶o̶r̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶r̶e̶o̶r̶d̶e̶r̶ ̶l̶i̶s̶t̶ ̶a̶f̶t̶e̶r̶ ̶s̶e̶l̶e̶c̶t̶i̶o̶n̶ ̶f̶o̶r̶ ̶s̶e̶l̶e̶c̶t̶o̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶i̶m̶p̶r̶o̶v̶e̶ ̶d̶a̶y̶ ̶d̶a̶t̶e̶s̶(̶S̶)̶.̶
+ ̶ ̶ ̶ ̶j̶q̶u̶e̶r̶y̶-̶i̶z̶e̶ ̶y̶o̶u̶r̶ ̶s̶t̶u̶f̶f̶.̶(̶H̶)̶
+ ̶ ̶ ̶ ̶i̶m̶r̶p̶o̶v̶e̶ ̶w̶e̶e̶k̶ ̶d̶a̶t̶e̶s̶(̶S̶)̶.̶
+ ̶ ̶ ̶ ̶i̶m̶p̶r̶o̶v̶e̶ ̶m̶o̶n̶t̶h̶ ̶d̶a̶t̶e̶s̶(̶S̶)̶.̶
+ ̶ ̶ ̶ ̶c̶o̶n̶v̶e̶r̶t̶ ̶l̶o̶o̶p̶s̶ ̶t̶o̶ ̶m̶o̶m̶e̶n̶t̶j̶s̶ ̶b̶a̶s̶e̶d̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶i̶m̶p̶r̶o̶v̶e̶ ̶s̶u̶g̶g̶e̶s̶t̶e̶d̶-̶t̶i̶m̶e̶s̶ ̶a̶t̶t̶r̶i̶b̶u̶t̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶p̶a̶g̶e̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶h̶o̶o̶k̶u̶p̶ ̶c̶r̶e̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶p̶a̶g̶e̶,̶ ̶w̶i̶t̶h̶ ̶s̶e̶n̶s̶e̶u̶s̶ ̶c̶o̶n̶t̶a̶c̶t̶s̶ ̶a̶n̶d̶ ̶c̶i̶r̶c̶l̶e̶s̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶b̶u̶t̶t̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶o̶r̶d̶e̶r̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶s̶ ̶b̶y̶ ̶l̶a̶s̶t̶ ̶m̶o̶d̶i̶f̶i̶e̶d̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶d̶a̶t̶e̶ ̶t̶o̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶o̶r̶m̶a̶t̶ ̶d̶a̶t̶e̶ ̶f̶o̶r̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶g̶i̶v̶e̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶t̶i̶t̶l̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶m̶a̶k̶e̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶s̶ ̶d̶e̶p̶e̶n̶d̶e̶n̶t̶ ̶o̶n̶ ̶d̶a̶t̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶g̶l̶y̶p̶h̶i̶c̶o̶n̶s̶ ̶f̶o̶r̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶h̶e̶a̶d̶e̶r̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶s̶e̶p̶e̶r̶a̶t̶e̶ ̶d̶a̶t̶e̶-̶t̶i̶t̶l̶e̶ ̶i̶n̶t̶o̶ ̶n̶e̶w̶ ̶d̶i̶v̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶b̶e̶t̶t̶e̶r̶ ̶i̶n̶n̶e̶r̶ ̶b̶o̶r̶d̶e̶r̶s̶ ̶f̶o̶r̶ ̶d̶a̶y̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶g̶i̶v̶e̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶"̶s̶w̶i̶p̶a̶b̶i̶l̶i̶t̶y̶"̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶u̶t̶o̶-̶a̶s̶s̶i̶g̶n̶ ̶u̶s̶e̶r̶,̶ ̶s̶o̶ ̶t̶h̶a̶t̶ ̶p̶h̶o̶n̶e̶ ̶i̶s̶ ̶a̶l̶r̶e̶a̶d̶y̶ ̶l̶o̶g̶g̶e̶d̶ ̶i̶n̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶h̶o̶o̶k̶u̶p̶ ̶g̶o̶o̶g̶l̶e̶ ̶c̶a̶l̶l̶b̶a̶c̶k̶ ̶f̶o̶r̶ ̶l̶o̶c̶a̶l̶ ̶i̶p̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶S̶i̶t̶e̶ ̶l̶o̶o̶k̶s̶ ̶l̶i̶k̶e̶ ̶s̶h̶i̶t̶ ̶o̶n̶ ̶p̶h̶o̶n̶e̶.̶ ̶(̶H̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶e̶r̶r̶o̶r̶ ̶i̶n̶ ̶b̶o̶t̶t̶o̶m̶ ̶n̶a̶v̶.̶(̶s̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶s̶w̶i̶p̶i̶n̶g̶ ̶t̶h̶i̶n̶g̶i̶e̶s̶ ̶p̶l̶a̶c̶e̶m̶e̶n̶t̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶g̶u̶r̶e̶ ̶o̶u̶t̶ ̶w̶h̶a̶t̶ ̶i̶s̶ ̶u̶p̶ ̶w̶i̶t̶h̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶f̶i̶g̶u̶r̶e̶ ̶o̶u̶t̶ ̶w̶h̶a̶t̶ ̶i̶s̶ ̶u̶p̶ ̶w̶i̶t̶h̶ ̶D̶r̶o̶p̶d̶o̶w̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶s̶e̶t̶u̶p̶ ̶r̶e̶m̶o̶t̶e̶ ̶a̶n̶d̶r̶o̶i̶d̶ ̶c̶h̶r̶o̶m̶e̶ ̶d̶e̶b̶u̶g̶g̶i̶n̶g̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶t̶i̶m̶e̶ ̶t̶o̶ ̶b̶o̶t̶t̶o̶m̶ ̶o̶f̶ ̶m̶e̶s̶s̶a̶g̶e̶ ̶i̶n̶s̶t̶e̶a̶d̶ ̶o̶f̶ ̶m̶i̶d̶d̶l̶e̶ ̶c̶r̶a̶p̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶l̶e̶a̶r̶ ̶i̶n̶p̶u̶t̶ ̶f̶o̶r̶m̶ ̶o̶n̶ ̶s̶u̶b̶m̶i̶t̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶u̶s̶e̶r̶ ̶i̶m̶a̶g̶e̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶t̶r̶y̶ ̶o̶u̶t̶ ̶s̶i̶t̶e̶ ̶o̶n̶ ̶p̶h̶o̶n̶e̶.̶(̶H̶)̶
+ ̶ ̶ ̶ ̶l̶o̶a̶d̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶s̶ ̶f̶r̶o̶m̶ ̶a̶l̶l̶ ̶p̶a̶g̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶r̶e̶m̶o̶v̶e̶ ̶m̶o̶n̶t̶h̶ ̶e̶v̶e̶n̶t̶ ̶d̶i̶v̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶d̶a̶t̶e̶s̶ ̶f̶o̶r̶ ̶i̶n̶c̶o̶m̶i̶n̶g̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶n̶a̶m̶e̶s̶ ̶t̶o̶ ̶s̶e̶a̶r̶c̶h̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶e̶v̶e̶n̶t̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶d̶a̶y̶ ̶a̶n̶d̶ ̶m̶o̶n̶t̶h̶ ̶l̶i̶n̶k̶s̶ ̶i̶n̶ ̶e̶v̶e̶n̶t̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶r̶e̶a̶t̶e̶ ̶l̶o̶o̶p̶ ̶t̶o̶ ̶f̶e̶t̶c̶h̶ ̶n̶e̶w̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶F̶i̶x̶ ̶p̶l̶a̶c̶e̶h̶o̶l̶d̶e̶r̶ ̶f̶o̶r̶ ̶c̶o̶n̶t̶a̶c̶t̶ ̶i̶n̶ ̶c̶r̶e̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶I̶M̶A̶P̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶s̶e̶n̶d̶e̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶s̶m̶t̶p̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶r̶e̶c̶i̶v̶e̶r̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶a̶d̶d̶ ̶f̶i̶l̶t̶e̶r̶ ̶f̶o̶r̶ ̶r̶e̶c̶e̶i̶v̶e̶r̶ ̶t̶o̶ ̶o̶n̶l̶y̶ ̶l̶o̶o̶k̶ ̶f̶o̶r̶ ̶s̶e̶n̶s̶u̶s̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶t̶i̶m̶e̶ ̶p̶i̶c̶k̶i̶n̶g̶ ̶f̶o̶r̶ ̶e̶v̶e̶n̶t̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶r̶e̶f̶a̶c̶t̶o̶r̶ ̶c̶o̶m̶m̶o̶n̶ ̶e̶l̶e̶m̶e̶n̶t̶s̶ ̶i̶n̶ ̶3̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶a̶d̶d̶ ̶s̶e̶n̶d̶i̶n̶g̶_̶u̶s̶e̶r̶_̶i̶d̶ ̶f̶o̶r̶ ̶e̶m̶a̶i̶l̶ ̶r̶e̶p̶l̶i̶e̶s̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶e̶-̶m̶a̶i̶l̶ ̶r̶e̶p̶l̶i̶e̶s̶.̶(̶H̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶e̶v̶e̶n̶t̶-̶l̶i̶s̶t̶ ̶a̶p̶p̶e̶a̶r̶a̶n̶c̶e̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶j̶u̶s̶t̶ ̶a̶l̶i̶g̶n̶m̶e̶n̶t̶ ̶o̶f̶ ̶e̶v̶e̶n̶t̶s̶ ̶a̶n̶d̶ ̶c̶i̶r̶c̶l̶e̶s̶ ̶i̶n̶ ̶p̶r̶o̶f̶i̶l̶e̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶c̶l̶e̶a̶n̶u̶p̶ ̶o̶f̶ ̶p̶r̶o̶f̶i̶l̶e̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶s̶c̶r̶o̶l̶l̶ ̶t̶o̶ ̶a̶p̶p̶r̶o̶p̶r̶i̶a̶t̶e̶ ̶l̶o̶c̶a̶t̶i̶o̶n̶ ̶i̶n̶ ̶w̶e̶e̶k̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶s̶c̶r̶o̶l̶l̶ ̶t̶o̶ ̶a̶p̶p̶r̶o̶p̶r̶i̶a̶t̶e̶ ̶l̶o̶c̶a̶t̶i̶o̶n̶ ̶i̶n̶ ̶d̶a̶y̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶l̶i̶n̶e̶s̶ ̶f̶o̶r̶ ̶d̶a̶y̶s̶ ̶i̶n̶ ̶w̶e̶e̶k̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶p̶h̶o̶n̶e̶ ̶s̶w̶i̶p̶a̶b̶i̶l̶i̶t̶y̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶i̶m̶a̶g̶e̶ ̶s̶i̶z̶e̶s̶ ̶e̶v̶e̶n̶t̶ ̶a̶n̶d̶ ̶c̶i̶r̶c̶l̶e̶ ̶l̶i̶s̶t̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶e̶v̶e̶n̶t̶ ̶t̶o̶ ̶l̶i̶s̶t̶ ̶w̶h̶e̶n̶ ̶c̶r̶e̶a̶t̶e̶d̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶x̶ ̶e̶v̶e̶n̶t̶ ̶h̶o̶m̶e̶ ̶d̶i̶s̶p̶l̶a̶y̶ ̶d̶a̶t̶a̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶o̶n̶t̶a̶i̶n̶ ̶s̶e̶a̶r̶c̶h̶ ̶b̶o̶x̶ ̶w̶i̶t̶h̶i̶n̶ ̶b̶o̶u̶n̶d̶a̶r̶i̶e̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶r̶e̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶i̶f̶ ̶n̶o̶t̶ ̶e̶x̶i̶s̶t̶s̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶g̶o̶o̶g̶l̶e̶ ̶c̶u̶s̶t̶o̶m̶ ̶b̶u̶t̶t̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶ ̶ ̶ ̶ ̶A̶d̶d̶ ̶F̶a̶c̶e̶b̶o̶o̶k̶ ̶c̶u̶s̶t̶o̶m̶ ̶b̶u̶t̶t̶o̶n̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶F̶i̶x̶ ̶s̶i̶g̶n̶i̶n̶ ̶b̶u̶t̶t̶o̶n̶ ̶s̶i̶z̶e̶s̶.̶(̶M̶)̶:̶
+ ̶ ̶ ̶ ̶A̶d̶d̶ ̶i̶m̶a̶g̶e̶ ̶f̶o̶r̶ ̶g̶o̶o̶g̶l̶e̶ ̶r̶e̶p̶l̶a̶c̶e̶ ̶o̶t̶h̶e̶r̶ ̶c̶r̶a̶p̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶l̶l̶o̶w̶ ̶s̶e̶a̶r̶c̶h̶ ̶u̶s̶i̶n̶g̶ ̶e̶m̶a̶i̶l̶ ̶a̶s̶ ̶w̶e̶l̶l̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶r̶e̶m̶o̶v̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶n̶a̶m̶e̶ ̶a̶n̶d̶ ̶j̶u̶s̶t̶ ̶s̶h̶o̶w̶ ̶p̶a̶r̶t̶i̶c̶i̶p̶a̶n̶t̶s̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶s̶h̶o̶w̶ ̶p̶a̶r̶t̶i̶c̶i̶p̶a̶n̶t̶ ̶n̶a̶m̶e̶s̶ ̶i̶f̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶n̶a̶m̶e̶ ̶i̶s̶ ̶n̶u̶l̶l̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶h̶a̶n̶g̶e̶ ̶f̶r̶o̶m̶ ̶d̶a̶y̶ ̶t̶o̶ ̶d̶a̶t̶e̶ ̶w̶h̶e̶n̶ ̶m̶e̶s̶s̶a̶g̶e̶ ̶o̶l̶d̶e̶r̶ ̶t̶h̶a̶n̶ ̶6̶ ̶d̶a̶y̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶c̶r̶e̶a̶t̶e̶d̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶t̶o̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶s̶ ̶p̶a̶g̶e̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶b̶o̶r̶d̶e̶r̶s̶ ̶w̶h̶e̶r̶e̶ ̶n̶e̶c̶e̶s̶s̶a̶r̶y̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶d̶i̶s̶p̶l̶a̶y̶ ̶i̶n̶ ̶u̶s̶e̶r̶ ̶t̶i̶m̶e̶z̶o̶n̶e̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶g̶u̶r̶e̶ ̶o̶u̶t̶ ̶i̶s̶s̶u̶e̶ ̶w̶i̶t̶h̶ ̶d̶o̶u̶b̶l̶e̶ ̶s̶e̶n̶d̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶f̶i̶g̶u̶r̶e̶ ̶o̶u̶t̶ ̶w̶h̶a̶t̶ ̶i̶s̶ ̶h̶a̶p̶p̶e̶n̶i̶n̶g̶ ̶o̶n̶ ̶s̶u̶b̶m̶i̶t̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶l̶o̶o̶k̶u̶p̶ ̶p̶r̶e̶v̶i̶o̶u̶s̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶s̶ ̶t̶o̶ ̶l̶o̶a̶d̶.̶ ̶(̶M̶)̶
+ ̶ ̶ ̶ ̶l̶i̶n̶k̶ ̶c̶r̶e̶a̶t̶e̶ ̶e̶v̶e̶n̶t̶ ̶o̶n̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶u̶s̶i̶n̶g̶ ̶s̶u̶g̶g̶e̶s̶t̶e̶d̶ ̶t̶i̶m̶e̶s̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶e̶v̶e̶n̶t̶ ̶t̶o̶ ̶f̶e̶e̶d̶ ̶w̶h̶e̶n̶ ̶c̶r̶e̶a̶t̶e̶d̶.̶(̶S̶)̶
+f̶i̶g̶u̶r̶e̶ ̶o̶u̶t̶ ̶w̶h̶a̶t̶'̶s̶ ̶w̶r̶o̶n̶g̶ ̶w̶i̶t̶h̶ ̶f̶r̶o̶n̶t̶ ̶p̶a̶g̶e̶.̶
+ ̶ ̶ ̶ ̶d̶o̶n̶'̶t̶ ̶d̶e̶l̶e̶t̶e̶ ̶n̶a̶m̶e̶s̶ ̶i̶f̶ ̶y̶o̶u̶ ̶d̶o̶n̶'̶t̶ ̶r̶e̶c̶o̶g̶n̶i̶z̶e̶ ̶i̶t̶.̶(̶S̶)̶
+a̶u̶t̶o̶c̶o̶m̶p̶l̶e̶t̶e̶:̶
+ ̶ ̶ ̶ ̶F̶i̶x̶ ̶f̶a̶c̶e̶b̶o̶o̶k̶ ̶l̶o̶a̶d̶i̶n̶g̶ ̶o̶n̶ ̶l̶o̶g̶i̶n̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶A̶d̶d̶ ̶u̶n̶i̶q̶u̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶i̶d̶e̶n̶t̶i̶f̶i̶e̶r̶.̶(̶H̶)̶
+ ̶ ̶ ̶ ̶c̶r̶e̶a̶t̶e̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶s̶e̶t̶t̶i̶n̶g̶s̶ ̶p̶a̶g̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶r̶e̶a̶t̶e̶ ̶s̶e̶t̶t̶i̶n̶g̶s̶ ̶b̶a̶c̶k̶e̶n̶d̶.̶(̶M̶)̶
+ ̶ ̶ ̶ ̶l̶i̶m̶i̶t̶ ̶'̶t̶y̶p̶e̶ ̶i̶n̶ ̶s̶e̶a̶r̶c̶h̶ ̶t̶e̶r̶m̶'̶ ̶t̶o̶ ̶w̶i̶n̶d̶o̶w̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶g̶e̶t̶ ̶d̶a̶t̶a̶ ̶f̶r̶o̶m̶ ̶a̶u̶t̶o̶c̶o̶m̶p̶l̶e̶t̶e̶.̶(̶S̶)̶
+ ̶ ̶ ̶ ̶u̶p̶d̶a̶t̶e̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶p̶r̶e̶v̶i̶e̶w̶ ̶a̶l̶o̶n̶g̶ ̶w̶i̶t̶h̶ ̶i̶n̶s̶e̶r̶t̶i̶n̶g̶ ̶m̶e̶s̶s̶a̶g̶e̶.̶
+ ̶ ̶ ̶ ̶a̶d̶d̶ ̶a̶b̶i̶l̶i̶t̶y̶ ̶t̶o̶ ̶j̶u̶s̶t̶ ̶u̶s̶e̶ ̶n̶a̶m̶e̶.̶
+l̶o̶g̶i̶n̶:̶
+ ̶ ̶ ̶ ̶s̶t̶a̶r̶t̶ ̶c̶a̶l̶e̶n̶d̶a̶r̶ ̶w̶i̶t̶h̶ ̶c̶u̶r̶r̶e̶n̶t̶ ̶d̶a̶y̶.̶ ̶(̶S̶)̶
+H̶o̶o̶k̶ ̶u̶p̶ ̶p̶a̶s̶s̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶u̶s̶e̶r̶.̶ ̶(̶S̶)̶
+N̶o̶ ̶C̶o̶n̶t̶e̶n̶t̶-̶S̶e̶c̶u̶r̶i̶t̶y̶-̶P̶o̶l̶i̶c̶y̶ ̶m̶e̶t̶a̶ ̶t̶a̶g̶ ̶f̶o̶u̶n̶d̶.̶ ̶P̶l̶e̶a̶s̶e̶ ̶a̶d̶d̶ ̶o̶n̶e̶ ̶w̶h̶e̶n̶ ̶u̶s̶i̶n̶g̶ ̶t̶h̶e̶ ̶c̶o̶r̶d̶o̶v̶a̶-̶p̶l̶u̶g̶i̶n̶-̶w̶h̶i̶t̶e̶l̶i̶s̶t̶ ̶p̶l̶u̶g̶i̶n̶.̶
+N̶e̶e̶d̶ ̶a̶ ̶l̶o̶a̶d̶i̶n̶g̶ ̶s̶c̶r̶e̶e̶n̶ ̶f̶o̶r̶ ̶s̶i̶g̶n̶i̶n̶.̶ ̶(̶M̶)̶
+l̶o̶c̶k̶ ̶i̶n̶ ̶p̶o̶r̶t̶r̶a̶i̶t̶ ̶m̶o̶d̶e̶.̶ ̶(̶S̶)̶
+s̶a̶v̶e̶ ̶e̶v̶e̶n̶t̶s̶ ̶t̶o̶ ̶s̶q̶l̶i̶t̶e̶.̶ ̶(̶S̶)̶
+s̶a̶v̶e̶ ̶e̶v̶e̶n̶t̶s̶ ̶t̶o̶ ̶s̶q̶l̶i̶t̶e̶.̶ ̶(̶S̶)̶
+s̶a̶v̶e̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶s̶ ̶t̶o̶ ̶s̶q̶l̶i̶t̶e̶.̶ ̶(̶S̶)̶
+c̶e̶n̶t̶r̶a̶l̶i̶z̶e̶ ̶d̶b̶ ̶q̶u̶e̶r̶i̶e̶s̶ ̶a̶n̶d̶ ̶c̶a̶l̶l̶s̶ ̶t̶o̶ ̶s̶e̶r̶v̶e̶r̶.̶ ̶(̶S̶)̶
+i̶n̶v̶e̶s̶t̶i̶g̶a̶t̶e̶ ̶l̶a̶c̶k̶ ̶o̶f̶ ̶s̶t̶u̶f̶f̶ ̶o̶n̶ ̶i̶n̶i̶t̶i̶a̶l̶ ̶l̶o̶a̶d̶.̶ ̶(̶S̶)̶
+s̶a̶v̶e̶ ̶c̶i̶r̶c̶l̶e̶s̶ ̶t̶o̶ ̶s̶q̶l̶i̶t̶e̶.̶ ̶(̶S̶)̶
+s̶a̶v̶e̶ ̶c̶h̶a̶t̶s̶ ̶t̶o̶ ̶s̶q̶l̶i̶t̶e̶.̶ ̶(̶S̶)̶
+a̶d̶d̶ ̶p̶r̶o̶m̶p̶t̶ ̶t̶o̶ ̶l̶o̶g̶o̶u̶t̶.̶ ̶(̶S̶)̶
+a̶d̶d̶ ̶w̶e̶b̶s̶q̶l̶ ̶s̶u̶p̶p̶o̶r̶t̶.̶ ̶(̶S̶)̶
+a̶d̶d̶ ̶c̶o̶n̶v̶e̶r̶s̶a̶t̶i̶o̶n̶ ̶m̶e̶s̶s̶a̶g̶e̶s̶ ̶t̶o̶ ̶d̶b̶.̶ ̶(̶S̶)̶
+ ̶ ̶ ̶ ̶c̶r̶e̶a̶t̶e̶ ̶s̶h̶a̶r̶e̶a̶b̶l̶e̶ ̶l̶i̶n̶k̶.̶(̶H̶)̶
+D̶o̶n̶'̶t̶ ̶s̶h̶o̶w̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶ ̶i̶f̶ ̶n̶o̶ ̶n̶e̶w̶ ̶n̶o̶t̶i̶f̶i̶c̶a̶t̶i̶o̶n̶s̶.̶ ̶(̶S̶)̶

@@ -1,0 +1,36 @@
+<style>
+#event-name-container div, #event-name-container span {
+	font-size: 5px;
+}
+</style>
+<div id='event-name-container' class='event-name-container flex-column' ng-controller="CreateEventCalendarCTRL" ng-init="initCalendar()" on-swipe-left="warn('hello');" on-swipe-right="warn('goodbye');">
+
+<div id='fake-header' class='flex-row w100'>
+	Propose Times
+</div>
+
+
+<div class='flex-row'><div id='header-time-column' class='header-time-column flex-column'></div><div class='header-column' ng-repeat="(k,v) in getDays()">{{v}}</div>
+	<div class='buttons'>
+	<select>
+		<option>Day</option>
+		<option selected>Week</option>
+		<option>Month</option>
+	</select>
+	</div>
+</div>
+<div class='outer-container-row flex-row'>
+<div class='container-row'>
+	<div class='column calendar-time-column'>
+		<div class='calendar-row calendar-hours' style='' ng-repeat="n in getHours() track by $index">
+		{{n}}
+		</div>
+	</div>
+	<div class='calendar-column' ng-repeat="(k,v) in getDays()">
+		<div ng-click='clickedTimeDiv($event)' class='calendar-row' ng-repeat="x in getHalfHours(k) track by $index">
+		<span style='min-width:100%;min-height:100%;visibility:hidden;' class='column{{k}} row{{$index}}'>{{k}},{{$index}},{{x}}</span>
+		</div>
+	</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,269 @@
+.timeBlock-active {
+    background-color: green;
+}
+
+#event-calendar-container {
+    display: -webkit-flex;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 90%;
+    width: 100%;
+    border: 1px solid brown;
+}
+
+#calendar-header-container {
+    display: -webkit-flex;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 6%;
+    width: 100%;
+    border: 1px solid brown;
+}
+
+#calendar-header-container > div {
+    display: flex;
+}
+
+#calendar-control-container, #calendar-header-right {
+    flex: 0 0 25%;
+    flex-direction: row;
+}
+
+#calendar-header-right {
+    flex: 1 1 75%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#calendar-header-right > img {
+    padding-right: 4%;
+    display: flex;
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-bottom: 5%;
+}
+
+#date-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 6%;
+}
+
+#date-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#calendar-container {
+    display: -webkit-flex;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 83%;
+    width: 100%;
+    border: 1px solid brown;
+}
+
+#calendar-container .day-containers {
+    flex: 1 1 auto;
+}
+
+#calendar-div {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    overflow-y: auto;
+}
+
+#month-calendar-div {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    border: 1px solid blue;
+    overflow-y: auto;
+}
+
+#month-calendar-div > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1 1 16.66%;
+}
+
+#month-calendar-div > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+#day-div, #month-day-div, #calendar-event-div {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    border: 1px solid yellow;
+    flex-direction: row;
+}
+
+#day-div div, #calendar-event-div div {
+    display:flex;
+    border: 1px solid green;
+    flex: 0 0 12.5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+#month-day-div div {
+    display:flex;
+    border: 1px solid green;
+    flex: 0 0 14.285%;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.day-containers {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 210%;
+}
+
+.day-containers div {
+    flex: 1 1 auto;
+}
+
+.day-containers div:nth-child(odd) {
+    border-bottom: 1px solid gray;
+}
+
+.time-keeper {
+    flex: 0 0 12.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 210%;
+}
+.time-keeper div{
+    display:flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+#month-calendar-event-div {
+    height: 10%;
+}
+.selectable-cell.highlighted {
+    background-color: green;
+}
+
+#date-title-container .swiper {
+    cursor: hand;
+    display: flex;
+    align-items: center;
+}
+
+#calendar-div > div {
+    /*border-right: 1px solid gray;*/
+}
+
+.calendar-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*border-left:1px solid black;*/
+    border-bottom:1px solid gray;
+    flex-grow: 1;
+    min-height: 5%;
+}
+.calendar-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    flex-shrink: 0;
+    min-width:13.57%;
+    align-self: stretch;
+    min-height: 100%;
+    border-left: 1px solid black;
+}
+.calendar-time-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-self: stretch;
+    min-width: 5%;
+}
+.calendar-hours {
+    height: 8.332%;
+}
+.container-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.outer-container-row {
+    overflow-y:scroll;
+}
+.header-time-column {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-width: 5%;
+    border-bottom: 1px solid gray;
+}
+.header-column {
+    display: flex;
+    flex-grow: 0;
+    min-width:13.57%;
+    flex-shrink: 0;
+    border-left: 1px solid black;
+    border-bottom: 1px solid gray;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.buttons select {
+z-index:1;
+border: none;
+}
+
+.buttons select option {
+color: black;
+}
+
+.highlight-halfhour {
+background: green;
+}
