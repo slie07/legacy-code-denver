@@ -1,3 +1,5 @@
+<!--Actually 10:18-->
+
 # Legacy Code Is "The Best"
 
 ![](https://s-media-cache-ak0.pinimg.com/236x/c7/b5/e1/c7b5e1827478b8f703a74371e6f2b214.jpg)
@@ -95,3 +97,5 @@ To get this project started, you will need to do a few things first.
 1. Open up Dev Tools, and don't close it ever.
 2. Check the Terminal for any errors with your web server.
 3. Commit early, and commit often.  You can always revert a small change, but a big change could be very messy.
+
+<!--Actually 10:35-->
