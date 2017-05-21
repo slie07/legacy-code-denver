@@ -83,12 +83,14 @@ This company cares a lot about sustainable code.  So if you see a place to make 
 To get this project started, you will need to do a few things first.
 
 1. Install Ionic globally with `npm`
+  - You have probably installed a newer version of `ionic` than the one this team uses
+  - To install this team's legacy version you should run `npm install -g ionic@2.2.2`
 2. Clone this repo
 2. Checkout the `starter-code` branch
 3. Checkout a new branch from this one with your first name
 4. In this new branch, navigate to `ionic/senseus` and start your web server.
   4. Check this [documentation](http://ionicframework.com/docs/guide/testing.html) for how to do this.
-  5. If prompted to select an address for the server, type `localhost`.
+  5. If prompted to select an address for the server, type or select `localhost`.
 5. If this does not open a version of the app, please ask an instructor for help.
 6. Navigate around the landing page, and the "Create an Event" workflow.  All of the problems listed above will be found in those places.
 
