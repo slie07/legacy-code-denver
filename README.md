@@ -1,4 +1,5 @@
 <!--Actually 10:18-->
+<!--WDI4 11:40 -->
 
 # Legacy Code Is "The Best"
 
@@ -43,7 +44,7 @@ Below is a basic rundown of the files in the app, and what they do.  This is mos
 
 **HARD**
 
-3. The Event Times screen on some mobile screens looks like a lion ate a zebra and threw it back up.  Please untangle this mess.
+5. The Event Times screen on some mobile screens looks like a lion ate a zebra and threw it back up.  Please untangle this mess.
 
 ### The Code We Deserve, but Not the Code We Need
 
@@ -51,8 +52,8 @@ There are a bunch of features the product has decided to abandon, but we still h
 
 1. The "Find an Event" button on the landing page, and the modal it pops up.
 2. The "Enable location sharing?" toggle button.
-4. The "Event Type" section on the "Event Details" screen.
-3. The five-dot div above the four-dot div on the "Event Locations" screen is confusing.  We can probably remove it.  Make sure you get rid of all its remnants, though.
+3. The "Event Type" section on the "Event Details" screen.
+4. The five-dot div above the four-dot div on the "Event Locations" screen is confusing.  We can probably remove it.  Make sure you get rid of all its remnants, though.
 
 ### Squashing Bugs
 
@@ -102,3 +103,5 @@ To get this project started, you will need to do a few things first.
 3. Commit early, and commit often.  You can always revert a small change, but a big change could be very messy.
 
 <!--Actually 10:35-->
+
+<!--11:57 WDI4 -->
