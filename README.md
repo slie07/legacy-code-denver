@@ -91,6 +91,7 @@ To get this project started, you will need to do a few things first.
 4. In this new branch, navigate to `ionic/senseus` and start your web server.
   4. Check this [documentation](http://ionicframework.com/docs/guide/testing.html) for how to do this.
   5. If prompted to select an address for the server, type or select `localhost`.
+  6. If you are not prompted, you will need to manually set the `--address` to `localhost`.  Check the documentation or `ionic help` for the right syntax for this.
 5. If this does not open a version of the app, please ask an instructor for help.
 6. Navigate around the landing page, and the "Create an Event" workflow.  All of the problems listed above will be found in those places.
 
