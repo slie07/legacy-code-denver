@@ -1,30 +1,31 @@
 <style>
-.slider-pager {
-	bottom: 3%;
-}
-ion-header-bar {
-	font-size: 14px;
-}
+    .slider-pager {
+        bottom: 3%;
+    }
+    
+    ion-header-bar {
+        font-size: 14px;
+    }
 </style>
 <ion-view id='ion-event-view' ng-controller='CreateEventCTRL'>
-<ion-slide-box show-pager="true" style='flex-grow:10;height:92%;' ng-init='disableSwipe()'>
-<ion-slide style='height:90%'>
-<div style='width:100%;height:100%;' ng-include="'templates/eventName.html'"></div>
-</ion-slide>
-<ion-slide style='height:90%'>
-<div style='width:100%;height:100%;' ng-include="'templates/eventInviteFriends.html'"></div>
-</ion-slide>
-<ion-slide style='height:90%'>
-<div style='width:100%;height:100%;' ng-include="'templates/eventCalendar.html'"></div>
-</ion-slide>
-<ion-slide style='height:90%'>
-<div style='width:100%;height:100%;' ng-include="'templates/eventLocation.html'"></div>
-</ion-slide>
-</ion-slide-box>
-<ion-footer-bar id='next-button-div' class='flex-row w100' style='padding:0'>
-<div class='flex-row w100'>
-	<a class='button back-buttony' ng-click='previousSlide()'>Back</a>
-	<a class='button next-button' ng-click='nextSlide()'>Next</a>
-</div>
-</ion-footer-bar>
+    <ion-slide-box show-pager="true" ng-init='disableSwipe()'>
+        <ion-slide>
+            <div ng-include="'templates/eventName.html'"></div>
+        </ion-slide>
+        <ion-slide>
+            <div ng-include="'templates/eventInviteFriends.html'"></div>
+        </ion-slide>
+        <ion-slide>
+            <div ng-include="'templates/eventCalendar.html'"></div>
+        </ion-slide>
+        <ion-slide>
+            <div ng-include="'templates/eventLocation.html'"></div>
+        </ion-slide>
+    </ion-slide-box>
+    <ion-footer-bar id='next-button-div' class='flex-row w100'>
+        <div class='flex-row w100'>
+            <a class='button back-buttony' ng-click='previousSlide()'>Back</a>
+            <a class='button next-button' ng-click='nextSlide()'>Next</a>
+        </div>
+    </ion-footer-bar>
 </ion-view>

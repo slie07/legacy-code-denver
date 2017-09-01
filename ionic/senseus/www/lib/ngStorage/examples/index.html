@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- strictly for styling and demo purposes -->
     <link rel="stylesheet" href="assets/foundation.min.css">
@@ -21,37 +22,38 @@
     <script>
         var eS = angular.module('exampleStore', ['angularLocalStorage']);
 
-        eS.controller('MainCtrl', ['$scope', 'storage', function ( $scope, storage ) {
+        eS.controller('MainCtrl', ['$scope', 'storage', function($scope, storage) {
             storage.bind($scope, 'test', 'Some Default Text');
 
-            $scope.clearTest = function () {
+            $scope.clearTest = function() {
                 storage.remove('test');
             };
         }]);
     </script>
 </head>
-<body>
-<div ng-app="exampleStore">
-    <div ng-controller="MainCtrl">
-        <div class="hero">
-            <h1>the simplest localStorage implementation, <b>ever</b></h1>
-            <h3>angular localStorage module</h3>
-        </div>
-        <div class="row">
-            <div class="large-12 columns">
-                <h2>How to use localStorage module</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-4 columns">
-                <p>Variable: <b>{{test}}</b></p>
-                <label>localStorage variable value:</label> <input type="text" ng-model="test">
-                <a ng-click="clearTest()">Clear Value from LC</a>
 
-                <p style="font-size: 12px;"><i>Change the value in the textbox and refresh the page!</i></p>
+<body>
+    <div ng-app="exampleStore">
+        <div ng-controller="MainCtrl">
+            <div class="hero">
+                <h1>the simplest localStorage implementation, <b>ever</b></h1>
+                <h3>angular localStorage module</h3>
             </div>
-            <div class="large-8 columns">
-                <pre>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2>How to use localStorage module</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4 columns">
+                    <p>Variable: <b>{{test}}</b></p>
+                    <label>localStorage variable value:</label> <input type="text" ng-model="test">
+                    <a ng-click="clearTest()">Clear Value from LC</a>
+
+                    <p><i>Change the value in the textbox and refresh the page!</i></p>
+                </div>
+                <div class="large-8 columns">
+                    <pre>
 var eS = angular.module('exampleStore', ['angularLocalStorage']);
 
 eS.controller('MainCtrl', ['$scope', 'storage', function ( $scope, storage ) {
@@ -62,10 +64,11 @@ eS.controller('MainCtrl', ['$scope', 'storage', function ( $scope, storage ) {
     };
 }]);
                 </pre>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 </body>
+
 </html>

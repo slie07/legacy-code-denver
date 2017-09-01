@@ -1,17 +1,17 @@
 <ion-view view-title="Contacts" ng-controller='ContactsCTRL'>
-<div class='bar bar-header bar-positive'>
-		<button class="button icon ion-arrow-left-a" ng-click='goBack()'></button>
-		<h1 class="title">Contacts</h1>
-		<button class="button icon ion-navicon"></button>
-</div>
-  <ion-content style="top:44px">
-    <ion-list>
-    <a class="row item item-thumbnail-left" ng-repeat='n in contacts track by $index'>
-      <div class='col flex-display-center' style='max-width:15%;'><img style='max-height:40px;max-width:40px;'src="{{n.image}}"></div>
-		  <span class='col' style='margin-top:3%;'>
-				<h2 class='title' style='margin-bottom:3%'><b>{{n.name}}</b></h2>
+    <div class='bar bar-header bar-positive'>
+        <button class="button icon ion-arrow-left-a" ng-click='goBack()'></button>
+        <h1 class="title">Contacts</h1>
+        <button class="button icon ion-navicon"></button>
+    </div>
+    <ion-content>
+        <ion-list>
+            <a class="row item item-thumbnail-left" ng-repeat='n in contacts track by $index'>
+                <div class='col flex-display-center'><img src="{{n.image}}"></div>
+                <span class='col'>
+				<h2 class='title' ><b>{{n.name}}</b></h2>
 			</span>
-    </a>
-    </ion-list>
-  </ion-content>
+            </a>
+        </ion-list>
+    </ion-content>
 </ion-view>

@@ -1,89 +1,100 @@
 <style>
-.event-row {
-	padding-left: 1%;
-}
-
-.toggle-container span {
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-.toggle-container label {
-	margin-top: 1%;
-	margin-bottom: 1%;
-
-}
-
-#accounts-list > div > div, #calendars-list > div > div {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-#fb_account_row {
-  margin-top: 1%;
-  padding: 5px;
-}
-#ical_calendar_row {
-  padding: 5px;
-}
+    .event-row {
+        padding-left: 1%;
+    }
+    
+    .toggle-container span {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .toggle-container label {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    #accounts-list>div>div,
+    #calendars-list>div>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #fb_account_row {
+        margin-top: 1%;
+        padding: 5px;
+    }
+    
+    #ical_calendar_row {
+        padding: 5px;
+    }
 </style>
 <ion-view view-title="Profile" ng-controller="EventCTRL" ng-init="profileInit()">
-<div class='bar bar-header bar-positive'>
-		<button class="button icon ion-navicon"></button>
-		<h1 class="title">Profile</h1>
-</div>
-<ion-content style="top:44px">
-	<div class="row w100">
-			<span class="w100 item item-thumbnail-left flex-align-center" href="#">
+    <div class='bar bar-header bar-positive'>
+        <button class="button icon ion-navicon"></button>
+        <h1 class="title">Profile</h1>
+    </div>
+    <ion-content>
+        <div class="row w100">
+            <span class="w100 item item-thumbnail-left flex-align-center" href="#">
 				<img id='profile-image'>
 			<div id='profile-name-contact'>
 			</div>
 			</span>
-	</div>
-	<div class='event-row border1'>
-		<div class='event-col90'>Enable location sharing?</div>
-		<div class='col10 flex-display-center toggle-container'>
-		<label class="toggle">
+        </div>
+        <div class='event-row border1'>
+            <div class='event-col90'>Enable location sharing?</div>
+            <div class='col10 flex-display-center toggle-container'>
+                <label class="toggle">
 			 <input type="checkbox" checked>
 			 <div class="track">
 				 <div class="handle"></div>
 			 </div>
 		</label>
-		</div>
-	</div><div class='event-row border1'>
-		<div class='event-col90'>Enable push notifications?</div>
-		<div class='col10 flex-display-center toggle-container'>
-		<label class="toggle">
+            </div>
+        </div>
+        <div class='event-row border1'>
+            <div class='event-col90'>Enable push notifications?</div>
+            <div class='col10 flex-display-center toggle-container'>
+                <label class="toggle">
 			 <input type="checkbox" checked>
 			 <div class="track">
 				 <div class="handle"></div>
 			 </div>
 		</label>
-		</div>
-	</div>
-	<div class="column w100">
-    <div class="row w100 flex-display-center"><h3 class='title'>Linked Accounts</h3></div>
-    <div id='accounts-list' class="list">
-      <div class='row w100 border1'>
-        <div class='px48 w10 google'><i class='icon ion-social-google'></i></div><div class='margin1'>{{user.email}}</div>
-      </div>
-      <div id='fb_account_row' class='w100 border1 flex-align-center'>
-        <div class='px48 w10 facebook'><i class='icon ion-social-facebook'></i></div><div class='margin1'>{{user.email}}</div>
-      </div>
-    </div>
-		<div class='row w100 flex-display-center'><i class='icon ion-android-add-circle px48'></i> </div>
-		<hr>
-    <div class="row w100 flex-display-center"><h3 class='title'>Linked Calendars</h3></div>
-    <div id='calendars-list' class="list">
-      <div id='ical_calendar_row' class='w100 border1 flex-align-center'>
-        <div class='px48 w10'><img style="width:100%;" src='static/images/ical.png'></img></div><div class='margin1'>{{user.email}}</div>
-      </div>
-			<div class='row w100 border1'>
-        <div class='px48 w10 google'><i class='icon ion-social-google'></i></div><div class='margin1'>{{user.email}}</div>
-      </div>
-	</div>
-		<div class='row w100 flex-display-center'><i class='icon ion-android-add-circle px48'></i> </div>
-		<hr>
-    </div>
-</ion-content>
+            </div>
+        </div>
+        <div class="column w100">
+            <div class="row w100 flex-display-center">
+                <h3 class='title'>Linked Accounts</h3>
+            </div>
+            <div id='accounts-list' class="list">
+                <div class='row w100 border1'>
+                    <div class='px48 w10 google'><i class='icon ion-social-google'></i></div>
+                    <div class='margin1'>{{user.email}}</div>
+                </div>
+                <div id='fb_account_row' class='w100 border1 flex-align-center'>
+                    <div class='px48 w10 facebook'><i class='icon ion-social-facebook'></i></div>
+                    <div class='margin1'>{{user.email}}</div>
+                </div>
+            </div>
+            <div class='row w100 flex-display-center'><i class='icon ion-android-add-circle px48'></i> </div>
+            <hr>
+            <div class="row w100 flex-display-center">
+                <h3 class='title'>Linked Calendars</h3>
+            </div>
+            <div id='calendars-list' class="list">
+                <div id='ical_calendar_row' class='w100 border1 flex-align-center'>
+                    <div class='px48 w10'><img style="width:100%;" src='static/images/ical.png'></img>
+                    </div>
+                    <div class='margin1'>{{user.email}}</div>
+                </div>
+                <div class='row w100 border1'>
+                    <div class='px48 w10 google'><i class='icon ion-social-google'></i></div>
+                    <div class='margin1'>{{user.email}}</div>
+                </div>
+            </div>
+            <div class='row w100 flex-display-center'><i class='icon ion-android-add-circle px48'></i> </div>
+            <hr>
+        </div>
+    </ion-content>

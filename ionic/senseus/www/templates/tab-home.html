@@ -1,27 +1,27 @@
 <style>
-#create-event-button-container {
-	height: 10%;
-}
-#create-event-button-container .button {
-	width: 50%;
-	font-size: 140%;
-}
+    #create-event-button-container {
+        height: 10%;
+    }
+    
+    #create-event-button-container .button {
+        width: 50%;
+        font-size: 140%;
+    }
 </style>
 <ion-view view-title="Home">
-	<div class='bar bar-header bar-positive'>
-			<button class="button icon ion-navicon"></button>
-			<h1 class="title">Home</h1>
-	</div>
-	<ion-content style="top:44px">
-		<div class="list">
-				<a class="item item-avatar flex-align-center" href="#" ng-repeat='n in events track by $index'>
-					<img src="{{n.image}}">
-						{{n.event}}
-				</a>
-		</div>
-	</ion-content>
-	<div id='create-event-button-container' class='bar bar-subfooter row' style='margin-bottom:5%'>
-		<a class='button flex-display-center' nav-direcion='forward' href='#/eventName'>Create Event</a><a class='button flex-display-center'>My Events</a>
+    <div class='bar bar-header bar-positive'>
+        <button class="button icon ion-navicon"></button>
+        <h1 class="title">Home</h1>
+    </div>
+    <ion-content>
+        <div class="list">
+            <a class="item item-avatar flex-align-center" href="#" ng-repeat='n in events track by $index'>
+                <img src="{{n.image}}"> {{n.event}}
+            </a>
+        </div>
+    </ion-content>
+    <div id='create-event-button-container' class='bar bar-subfooter row'>
+        <a class='button flex-display-center' nav-direcion='forward' href='#/eventName'>Create Event</a><a class='button flex-display-center'>My Events</a>
 
-			</div>
+    </div>
 </ion-view>

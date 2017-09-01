@@ -1,46 +1,46 @@
 <ion-header-bar id='senseus-header'>Event Review</ion-header-bar>
 <ion-content class='event-name-container' ng-controller="CreateEventCTRL">
-  <div id='event-area' class='flex-column w100 list'>
-		<div id='add-event-image-div'class='item flex-display-center flex-row w100'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image' style='margin-right:5%'></i><span>Add Image for Event</span></a></div>
-		<div class='flex-row item'></div>
-		<div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
-		<div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
-		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-android-calendar" style="font-size:48px;"></i></span>{{getDates()}}</div>
-		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-location" style="font-size:48px"></i></span>{{getLocations()}}</div>
-		<div class='event-row'>
-			<div class='event-col90'>Guests: 
-				<ul>
-					<li ng-repeat="(name,value) in eventInfo.invitedFriends" ng-show="value">{{name}}</li>
-				</ul>
-			</div>
-			<div class='col10 flex-display-center'>
-					<a class='button'><i class='icon ion-android-person-add'></i>&nbsp;&nbsp;Invite</a>
-			</div>
-		</div>
-		<div class='event-row'>
-			<div class='event-col90'>Enable location sharing?</div>
-			<div class='col10 flex-display-center'>
-			<label class="toggle">
+    <div id='event-area' class='flex-column w100 list'>
+        <div id='add-event-image-div' class='item flex-display-center flex-row w100'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image'></i><span>Add Image for Event</span></a></div>
+        <div class='flex-row item'></div>
+        <div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
+        <div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
+        <div class='flex-row item flex-align-center'><span><i class="icon ion-android-calendar"></i></span>{{getDates()}}</div>
+        <div class='flex-row item flex-align-center'><span><i class="icon ion-location"></i></span>{{getLocations()}}</div>
+        <div class='event-row'>
+            <div class='event-col90'>Guests:
+                <ul>
+                    <li ng-repeat="(name,value) in eventInfo.invitedFriends" ng-show="value">{{name}}</li>
+                </ul>
+            </div>
+            <div class='col10 flex-display-center'>
+                <a class='button'><i class='icon ion-android-person-add'></i>&nbsp;&nbsp;Invite</a>
+            </div>
+        </div>
+        <div class='event-row'>
+            <div class='event-col90'>Enable location sharing?</div>
+            <div class='col10 flex-display-center'>
+                <label class="toggle">
 				 <input type="checkbox" checked>
 				 <div class="track">
 					 <div class="handle"></div>
 				 </div>
 			</label>
-			</div>
-		</div>
-		<div id='add-event-details-div' class='flex-display-center event-button-div-class' style='bottom: 10%;'>
-			<a class='button event-next-button' id='add-event-details-button'>Add More Details</a>
-		</div>
-	</div>
+            </div>
+        </div>
+        <div id='add-event-details-div' class='flex-display-center event-button-div-class'>
+            <a class='button event-next-button' id='add-event-details-button'>Add More Details</a>
+        </div>
+    </div>
 </ion-content>
-<ion-footer-bar id='next-button-div' class='flex-row w100' style='padding:0'>
-<div class='flex-row w100'>
-	<div class='bar' ng-controller='CreateEventCTRL'>
-		<div class='event-column'>
-			<div id='next-button-div' class='row'>
-				<a class='button next-button' nav-direction='forward' ng-click='createEvent()'>Create Event</a>
-			</div>
-		</div>
-	</div>
-</div>
+<ion-footer-bar id='next-button-div' class='flex-row w100'>
+    <div class='flex-row w100'>
+        <div class='bar' ng-controller='CreateEventCTRL'>
+            <div class='event-column'>
+                <div id='next-button-div' class='row'>
+                    <a class='button next-button' nav-direction='forward' ng-click='createEvent()'>Create Event</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-footer-bar>

@@ -1,96 +1,108 @@
 <style>
-#google-login-div > div, #facebook-login-div > div {
-	flex-grow: 1;
-  flex-direction: row;
-}
-
-.margin2 {
-	margin-left: 2%;
-}
-
-.margint5 {
-	margin-top: 2.5%;
-}
-.wsnowrap {
-white-space: nowrap;
-}
-.line-text {
-   width: 30%;
-   text-align: center;
-   border-bottom: 1px solid gray;
-   line-height: 0.1em;
-   margin: 10px 0 20px;
-	 color: gray;
-}
-
-.line-text span {
-    background:#fff;
-    padding:0 10px;
-}
-
-.highlighted {
-	background: #878787;
-}
-
-.w30 {
-	width: 30%;
-}
+    #google-login-div>div,
+    #facebook-login-div>div {
+        flex-grow: 1;
+        flex-direction: row;
+    }
+    
+    .margin2 {
+        margin-left: 2%;
+    }
+    
+    .margint5 {
+        margin-top: 2.5%;
+    }
+    
+    .wsnowrap {
+        white-space: nowrap;
+    }
+    
+    .line-text {
+        width: 30%;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+        color: gray;
+    }
+    
+    .line-text span {
+        background: #fff;
+        padding: 0 10px;
+    }
+    
+    .highlighted {
+        background: #878787;
+    }
+    
+    .w30 {
+        width: 30%;
+    }
 </style>
-<ion-modal-view style="width: 100%; height: 100%;">
+<ion-modal-view>
     <ion-content>
-      <div class='flex-display-center w100 margint5'><h3 class="title" style="width:100%;text-align:center;">Login/Sign Up</h3></div>
-      <div class="list">
-				<div class="w100 flex-display-center" style="margin-top:2%">
-						<div id='google-login-div' class='google border1 flex-row handcursor' style='width:60%;' ng-controller='GoogleLoginController' ng-click='login()'><i class='icon ion-social-google px48 margin2'></i><div class='flex-display-center' style="width:90%;"><span style='white-space:nowrap'>Login with Google</span></div></div>
-				</div>
-				<div class='row w100 flex-display-center margint5 flex-row'><h3 class='line-text'><span>or</span></h3></div>
-        <div class="w100 flex-display-center margint5">
-				<div id='facebook-login-div' class='facebook border1 flex-row handcursor' style='width:60%;' ng-click='fblogin()'><i class='icon ion-social-facebook px48 margin2'></i><div class='flex-display-center' style="width:90%;"><span style='white-space:nowrap'>Login with Facebook</span></div></div>
-				</div>
-				<div class='w100 flex-display-center margint5 row'><h3 class='line-text'><span>or</span></h3></div>
-				<div>
-				<div class='w100 flex-display-center flex-row' style='font-weight:bold;'><a id='login-tab-button' class='button w30 highlighted' ng-click='loginButton()'>Login</a><a id='sign-up-tab-button' class='button w30' ng-click='signinButton()'>Sign Up</a></div>
-					<div id='login-div' title='Login'>
-						<div class='list margint5'>
-						<label class="item item-input">
+        <div class='flex-display-center w100 margint5'>
+            <h3 class="title">Login/Sign Up</h3>
+        </div>
+        <div class="list">
+            <div class="w100 flex-display-center">
+                <div id='google-login-div' class='google border1 flex-row handcursor' ng-controller='GoogleLoginController' ng-click='login()'><i class='icon ion-social-google px48 margin2'></i>
+                    <div class='flex-display-center'><span>Login with Google</span></div>
+                </div>
+            </div>
+            <div class='row w100 flex-display-center margint5 flex-row'>
+                <h3 class='line-text'><span>or</span></h3>
+            </div>
+            <div class="w100 flex-display-center margint5">
+                <div id='facebook-login-div' class='facebook border1 flex-row handcursor' ng-click='fblogin()'><i class='icon ion-social-facebook px48 margin2'></i>
+                    <div class='flex-display-center'><span>Login with Facebook</span></div>
+                </div>
+            </div>
+            <div class='w100 flex-display-center margint5 row'>
+                <h3 class='line-text'><span>or</span></h3>
+            </div>
+            <div>
+                <div class='w100 flex-display-center flex-row'><a id='login-tab-button' class='button w30 highlighted' ng-click='loginButton()'>Login</a><a id='sign-up-tab-button' class='button w30' ng-click='signinButton()'>Sign Up</a></div>
+                <div id='login-div' title='Login'>
+                    <div class='list margint5'>
+                        <label class="item item-input">
 							<span class="input-label">Email</span>
 							<input type="text" ng-model="contact.email">
 						</label>
-						<label class="item item-input">
+                        <label class="item item-input">
 							<span class="input-label">Password</span>
 							<input type="password" ng-model="contact.password">
 						</label>
-						</div>
-					</div>
-					<div id='sign-up-div' title='Sign Up' style='display:none'>
-						<div class='list margint5'>
-						<label class="item item-input">
+                    </div>
+                </div>
+                <div id='sign-up-div' title='Sign Up'>
+                    <div class='list margint5'>
+                        <label class="item item-input">
 							<span class="input-label">Email</span>
 							<input type="text" ng-model="contact.email">
 						</label>
-						<label class="item item-input">
+                        <label class="item item-input">
 							<span class="input-label">Password</span>
 							<input type="password" ng-model="contact.password">
 						</label>
-						<!--<label class="item item-input">-->
-							<!--<span class="input-label">Confirm Password</span>-->
-							<!--<input type="password" ng-model="contact.password">-->
-						<!--</label>-->
-						</div>
-					</div>
-				</div>
-				<!--<label class="item item-input">-->
-          <!--<span class="input-label">Name</span>-->
-          <!--<input type="text" ng-model="contact.name">-->
-        <!--</label>-->
-        <!--<label class="item item-input">-->
-          <!--<span class="input-label">Info</span>-->
-          <!--<input type="text" ng-model="contact.info">-->
-        <!--</label>-->
-      </div>
+                        <!--<label class="item item-input">-->
+                        <!--<span class="input-label">Confirm Password</span>-->
+                        <!--<input type="password" ng-model="contact.password">-->
+                        <!--</label>-->
+                    </div>
+                </div>
+            </div>
+            <!--<label class="item item-input">-->
+            <!--<span class="input-label">Name</span>-->
+            <!--<input type="text" ng-model="contact.name">-->
+            <!--</label>-->
+            <!--<label class="item item-input">-->
+            <!--<span class="input-label">Info</span>-->
+            <!--<input type="text" ng-model="contact.info">-->
+            <!--</label>-->
+        </div>
 
-      <div class='flex-display-center w100'><a class="button" ng-click="closeModal()" style='width:30%'>{{loginSignUpState}}</a></div>
-    <div class='w100 flex-display-center' style='margin-top:2%'><a><span class='wsnowrap' style='color: blue;text-decoration: underline'>Forgot Password</span></a></div>
+        <div class='flex-display-center w100'><a class="button" ng-click="closeModal()">{{loginSignUpState}}</a></div>
+        <div class='w100 flex-display-center'><a><span class='wsnowrap'>Forgot Password</span></a></div>
     </ion-content>
 </ion-modal-view>
-
