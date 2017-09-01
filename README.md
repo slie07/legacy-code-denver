@@ -83,6 +83,7 @@ This company cares a lot about sustainable code.  So if you see a place to make 
 
 To get this project started, you will need to do a few things first.
 
+1. You will all be added as collaborators to this repo shortly. Go into your email and accept the invite to collaborate.
 1. Install Ionic globally with `npm`
   - You have probably installed a newer version of `ionic` than the one this team uses
   - To install this team's legacy version you should run `npm install -g ionic@2.2.2`
