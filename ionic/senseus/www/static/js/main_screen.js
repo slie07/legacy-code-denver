@@ -79,7 +79,7 @@ function loadFrontPage() {
     //$('#bottom-nav-bar').hide();
 //}
 
-function findEvent() {
-    $('#extension').toggleClass('active');
-}
+// function findEvent() {
+//     $('#extension').toggleClass('active');
+// }
 

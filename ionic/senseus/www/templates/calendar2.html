@@ -3,7 +3,7 @@
 	<table id='day-header-table' class="table w100 h100" style='table-layout:fixed;'>
 	<thead>
 	<tr>
-	<th id='header-time-column'></th>
+	<th id='header-time-column' style='table-layout:fixed;'></th>
 	<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
 	</tr>
 	</thead>
@@ -15,9 +15,9 @@
 <table class="table w100 h100" style='table-layout:fixed; margin-top:0;'>
 <!--<thead></thead>-->
 <tbody id='calendar-week-table'>
+<td ng-repeat="y in days track by $index"><div class='first-div'>&nbsp;</div><div>&nbsp;</div></td>
 <tr ng-repeat="x in hours track by $index">
 <td>{{x}}</td>
-<td ng-repeat="y in days track by $index"><div class='first-div'>&nbsp;</div><div>&nbsp;</div></td>
 </tr>
 </tbody>
 </table>
