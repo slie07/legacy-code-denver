@@ -143,7 +143,6 @@
     flex-direction: column;
     flex-wrap: nowrap;
     height: 210%;
-    table-layout: fixed;
 }
 
 .day-containers div {

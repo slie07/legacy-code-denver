@@ -2449,8 +2449,7 @@ button, input, select, textarea {
  * the UA stylesheet.
  */
 button, input {
-  line-height: 2; 
-}
+  line-height: normal; }
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -5657,7 +5656,7 @@ legend {
 label, input, button, select, textarea {
   font-weight: normal;
   font-size: 14px;
-  line-height: 2; }
+  line-height: 1.42857; }
 
 input, button, select, textarea {
   font-family: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif; }
