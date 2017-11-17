@@ -438,6 +438,7 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
     }
 
 })
+
 .controller('LoginController', function($scope, $ionicModal) {
     $ionicModal.fromTemplateUrl('templates/loginModal.html', {
         scope: $scope,
@@ -450,11 +451,19 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
         FB.login(function(response) {
             checkLoginState();
         });
-    }
+    };
 
   $scope.openModal = function() {
-    $scope.modal.show()
-  }
+    // $scope.modal.show();
+    console.log('hitting the openModal function!');
+    // $ionicModal.open();
+    // $ionicModal.modal.open();
+    console.log($scope.modal);
+
+    /*
+    ["ui.bootstrap.modal"]
+    */
+  };
 
   $scope.contact = {
   };
@@ -473,7 +482,7 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
       $('#login-tab-button').toggleClass('highlighted');
       $('#sign-up-tab-button').toggleClass('highlighted');
       $scope.loginSignUpState = 'Sign Up';
-  }
+  };
 
   $scope.loginButton = function() {
       document.getElementById('login-div').style.display='inherit';
