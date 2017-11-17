@@ -176,11 +176,6 @@ border-color: red;
     justify-content: center;
 }
 
-/*.flex-align-center {
-    display: flex;
-    align-items: center;
-}*/
-
 .event-col90 {
 	display: flex;
 	width: 85%;
@@ -325,7 +320,7 @@ border-color: red;
   padding:0;
 }
 
-.pl1, #event-type-container .item-content {
+#event-type-container .item-content {
   padding-left: 1%;
 }
 

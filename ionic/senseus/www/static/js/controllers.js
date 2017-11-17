@@ -304,7 +304,6 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
     $scope.eventInfo = Data.eventInfo;
 
     $scope.eventChoice = 'public';
-    $scope.locationSharing = true;
 
     $scope.getDates = function() {
         var to_return = "";
@@ -344,7 +343,6 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
             eventDescription: $scope.eventInfo.eventDescription,
             locations: Data.eventInfo.locations,
             times: Data.eventInfo.selectedIntervals,
-            locationSharing: $scope.locationSharing,
             eventType: $scope.eventChoice,
             invitedFriends: $scope.eventInfo.invitedFriends
         };
