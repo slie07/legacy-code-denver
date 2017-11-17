@@ -1,0 +1,30 @@
+<ion-view id='event-name-container' view-title="EventHome" ng-init="init(4);">
+	<div class='senseus-header'>
+  Event
+	</div>
+  <div id='event-area' class='flex-column w100 list'>
+		<div id='add-event-image-div'class='item flex-display-center flex-row w100'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image' style='margin-right:5%'></i><span>Add Image for Event</span></a></div>
+		<div class='flex-row item'></div>
+		<div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
+		<div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
+		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-android-calendar" style="font-size:48px;"></i></span>{{dates}}</div>
+		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-location" style="font-size:48px"></i></span>{{locationName}}</div>
+		<div class='event-row item'>
+			<div class='event-col90'>Guests: </div>
+			<div class='col10 flex-display-center'>
+					<a class='button'><i class='icon ion-android-person-add'></i>&nbsp;&nbsp;Invite</a>
+			</div>
+		</div>
+		<div class='event-row item'>
+			<div class='event-col90'>Enable location sharing?</div>
+			<div class='col10 flex-display-center'>
+			<label class="toggle">
+				 <input type="checkbox" checked>
+				 <div class="track">
+					 <div class="handle"></div>
+				 </div>
+			</label>
+			</div>
+		</div>
+	</div>
+</ion-view>

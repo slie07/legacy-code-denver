@@ -1,0 +1,60 @@
+1) Install Tools.  All of these can be found easily by Googling:
+
+Install Python
+
+Install Postgres
+
+Install Node/npm
+
+Install JDK 7
+
+2) Navigate to workspace and clone the repo:
+
+git clone https://username@bitbucket.org/svankina/senseus.git
+
+3) install pip:
+download get-pip.py from the website and run: python get-pip.py
+
+4) pip install -r pip-requirements.txt
+
+5) psql -U postgres
+create user senseus with password 'senseus';
+ALTER ROLE senseus SUPERUSER;
+
+6) psql -U postgres -f database/create_db.sql
+#Locales on Linux and Windows are different, you need to replace 'en_US.UTF-8' with 'american_usa' in the create_db.sql file
+
+7) sudo npm install -g ionic cordova bower gulp
+
+8) From here you can simply run the app by doing:
+
+#cd senseus/ionic/senesus
+#ionic serve
+#This will launch the app in your default browser with live reloads.
+#Windows handles the "static" file text ../../../static/ improperly--workaround is to just copy static folder into www directory, couldn't find better solution
+
+#Run the backend server as usual: (Is this even necessary anymore?)
+#cd senseus
+#python server.py
+
+--Now that the web app is working, these steps allow Android deployment --
+
+9) Download and install VirtualBox
+
+10) Download and install Android Studio
+
+11) Install android 22 here by entering the following on CMD and checking correct packages
+#android
+
+12) Download and install Genymotion
+
+13) Build ionic for android
+#cd senseus/ionic/senseus
+#ionic platform add android
+#ionic build
+
+14) Open Genymotion, and add a new phone emulator (e.g. HTC One 4.4.4 API 19)
+
+15) #ionic run android
+#this will now run stuff on emulator or on device conected via usb.
+
