@@ -79,7 +79,4 @@ function loadFrontPage() {
     //$('#bottom-nav-bar').hide();
 //}
 
-function findEvent() {
-    $('#extension').toggleClass('active');
-}
 
