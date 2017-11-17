@@ -180,9 +180,9 @@
     align-items: center;
 }
 
-#calendar-div > div {
-    /*border-right: 1px solid gray;*/
-}
+/*#calendar-div > div {
+    border-right: 1px solid gray;
+}*/
 
 .calendar-row {
     display: flex;
