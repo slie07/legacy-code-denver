@@ -310,7 +310,7 @@ border-color: red;
   color: blue;
 }
 
-/*Font size correction*?
+/*Font size correction*/
 /*#event-name-container span, #event-name-container div , #event-name-container label {
   font-size: 10px;
 }*/
@@ -319,9 +319,10 @@ border-color: red;
   font-size: 14px;
 }
 
-.flex-row, .p0 {
-  padding:0;
-}
+/*corrects row sizing issue-now all the same size*/
+/*.flex-row, .p0 {
+  padding:0px;
+}*/
 
 .pl1, #event-type-container .item-content {
   padding-left: 1%;
