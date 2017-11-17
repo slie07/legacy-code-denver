@@ -1,0 +1,41 @@
+<ion-header-bar id='senseus-header'>Event Guests</ion-header-bar>
+<ion-content ng-controller='CreateEventInviteCTRL'>
+	<div id='invite-friends-container'>
+		<h2>  Invite Friends</h2>
+	    <!--<div id='google-friends-div'>
+	        <form id='google-input-friends' ng-submit='addFriend()'>
+	        	<select id='google-invite-input' class="inputbox form-control" ng-model="newInvite" ng-options="friend.name for friend in allFriends">
+	        	</select>
+	        	<input type='submit' value="Invite from Circles"/>
+	        </form> -->
+	    <div class='event-row'>
+	        <button class='button' ng-click="openFriends()"><i class='icon ion-android-person-add'></i> Sensus Invite</button>
+	    </div>
+
+        <div class="modal" modal="showModal" close="closeFriends()">
+            <div class="modal-header">
+                <h4>Circles</h4>
+            </div>
+            <div class="modal-body">
+                <form ng-submit="inviteFriends()">
+                    <div ng-repeat="friend in allFriends">
+                        <input type="checkbox" ng-model="eventInfo.invitedFriends[friend.name]" ng-checked=false> {{friend.name}}
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Invite">
+                </form>
+            </div>
+        </div>
+
+		<div class='event-row'>
+			<a class='button'><i class='icon ion-android-person-add'></i>  <i class='icon ion-social-facebook'></i></a>
+			<a class='button'><i class='icon ion-android-person-add'></i>  <i class='icon ion-social-googleplus'></i></a>
+		</div>
+
+		<div class='event-row'>
+			<div class='event-col90'>Guests: </div>
+		</div>
+		<ul>
+			<li ng-repeat="friend in invitedFriends">{{friend.name}}</li>
+		</ul>
+	</div>
+</ion-content>
