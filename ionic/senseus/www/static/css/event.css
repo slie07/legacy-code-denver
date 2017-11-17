@@ -161,6 +161,10 @@ border-color: red;
     padding-left: 1%;
 }
 
+#event-area>.item {
+  padding: 1em;
+}
+
 #inner-location-wrapper, #inner-calendar-wrapper {
     display: flex;
     align-items: center;
