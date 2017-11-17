@@ -303,8 +303,6 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
     $scope.intervalStart = null;
     $scope.eventInfo = Data.eventInfo;
 
-    $scope.eventChoice = 'public';
-
     $scope.getDates = function() {
         var to_return = "";
         var times = JSON.parse(localStorage.getItem('timeBlocks'));
@@ -343,7 +341,6 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
             eventDescription: $scope.eventInfo.eventDescription,
             locations: Data.eventInfo.locations,
             times: Data.eventInfo.selectedIntervals,
-            eventType: $scope.eventChoice,
             invitedFriends: $scope.eventInfo.invitedFriends
         };
 

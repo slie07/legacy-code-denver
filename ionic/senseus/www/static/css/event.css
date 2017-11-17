@@ -108,14 +108,6 @@ background-color: red;
 border-color: red;
 }
 
-.full-width {
-	width: 100%;
-}
-
-.event-type-options > div > label {
-		width: 100%;
-}
-
 .light-dot{
 	opacity: 0.3;
 }
@@ -254,11 +246,6 @@ border-color: red;
   min-height: 100%;
 }
 
-#event-type-container i {
-  display:flex;
-  justify-content: center;
-}
-
 #event-name-container .bar-footer #progress-bar-container {
   height: 50%;
   width: 100%; }
@@ -291,12 +278,6 @@ border-color: red;
   background-color: red;
   border-color: red; }
 
-.full-width {
-  width: 100%; }
-
-.event-type-options > div > label {
-  width: 100%; }
-
 .light-dot {
   opacity: 0.3; }
 
@@ -318,10 +299,6 @@ border-color: red;
 
 .flex-row, .p0 {
   padding:0;
-}
-
-#event-type-container .item-content {
-  padding-left: 1%;
 }
 
 .pr1 {
