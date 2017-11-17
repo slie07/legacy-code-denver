@@ -267,3 +267,7 @@ color: black;
 .highlight-halfhour {
 background: green;
 }
+
+div.button.small-button {
+    max-width: 10px;
+}

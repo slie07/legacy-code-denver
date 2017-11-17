@@ -1,12 +1,12 @@
 <ion-header-bar id='senseus-header'>Event Times</ion-header-bar>
-<ion-header-bar id='senseus-calendar-header'>
+<ion-content id='senseus-calendar-header'>
 <div class='w100 flex-display-center flex-row' ng-controller="CreateEventCalendarCTRL" ng-init="initHeader()">
 	<table id='day-header-table' class="table w100 h100" style='table-layout:fixed;'>
-	<thead>
+	<tbody>
 	<tr>
 	<th id='header-time-column'>
-		<div class='button' ng-click='changeTimeView(-1)'><i class='icon ion-arrow-left-c'></i></div>
-        <div class='button' ng-click='changeTimeView(1)'><i class='icon ion-arrow-right-c'></i></div>
+		<div class='button small-button' ng-click='changeTimeView(-1)'><i class='icon ion-arrow-left-c'></i></div>
+        <div class='button small-button' ng-click='changeTimeView(1)'><i class='icon ion-arrow-right-c'></i></div>
 	</th>
 	<th>{{Sunday}}</th><th>{{Monday}}</th><th>{{Tuesday}}</th><th>{{Wednesday}}</th><th>{{Thursday}}</th><th>{{Friday}}</th><th>{{Saturday}}</th>
 	</tr>
@@ -14,9 +14,9 @@
 	</tbody>
 	</table>
 </div>
-</ion-header-bar>
-<ion-content id='week-calendar' ng-controller="CreateEventCalendarCTRL" ng-init="initCalendar()" class='flex-column w100'>
-<table class="table w100 h100" style='table-layout:fixed; margin-top:0;'>
+</ion-content>
+<ion-content id='week-calendar' ng-controller="CreateEventCalendarCTRL" ng-init="initCalendar()" class='flex-row w100'>
+<table class="table w100 h100" style='table-layout:fixed; margin-top:80px;'>
 <!--<thead></thead>-->
 <tbody id='calendar-week-table'>
 <tr ng-repeat="x in hours track by $index">
