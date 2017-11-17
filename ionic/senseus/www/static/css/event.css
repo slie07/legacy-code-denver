@@ -310,8 +310,13 @@ border-color: red;
   color: blue;
 }
 
+@media(max-width: 736px) {
+  #event-name-container span, #event-name-container div , #event-name-container label {
+    font-size: 10px;
+  }
+}
+
 #event-name-container span, #event-name-container div , #event-name-container label {
-  font-size: 10px;
 }
 
 #event-name-container #senseus-header span{
