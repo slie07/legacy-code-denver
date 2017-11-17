@@ -257,10 +257,11 @@ border-color: red;
   min-height: 100%;
 }
 
-#event-type-container i {
-  display:flex;
-  justify-content: center;
-}
+@media only screen and (min-width: 319px) and (max-width: 415px) {
+  #desc-input {
+    padding-left: 2.7em;
+  }
+} 
 
 #event-name-container .bar-footer #progress-bar-container {
   height: 50%;
@@ -296,9 +297,6 @@ border-color: red;
 .full-width {
   width: 100%; }
 
-.event-type-options > div > label {
-  width: 100%; }
-
 .light-dot {
   opacity: 0.3; }
 
@@ -308,10 +306,6 @@ border-color: red;
 
 .radio-icon {
   color: blue;
-}
-
-#event-name-container span, #event-name-container div , #event-name-container label {
-  font-size: 10px;
 }
 
 #event-name-container #senseus-header span{

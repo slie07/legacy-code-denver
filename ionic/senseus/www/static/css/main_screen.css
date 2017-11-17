@@ -273,12 +273,6 @@ width: 100%; }
     transition-delay:0s;
 }
 
-#first-time-find-event {
-    margin-top: 15%;
-    align-items: center;
-    justify-content: center;
-}
-
 #first-time-create-event, #first-time-login {
     margin-top: 10%;
     align-items: center;
