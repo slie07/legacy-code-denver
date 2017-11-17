@@ -311,11 +311,11 @@ border-color: red;
 }
 
 #event-name-container span, #event-name-container div , #event-name-container label {
-  font-size: 10px;
+  font-size: 40px;
 }
 
 #event-name-container #senseus-header span{
-  font-size: 14px;
+  font-size: 40px;
 }
 
 .flex-row, .p0 {
