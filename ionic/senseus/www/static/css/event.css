@@ -224,6 +224,10 @@ border-color: red;
     border: 1px solid black;
 }
 
+#google-autocomplete {
+  margin-top: 4%
+}
+
 #event-location-container {
   display: -webkit-flex;
   display: flex;
@@ -260,6 +264,10 @@ border-color: red;
 @media only screen and (min-width: 319px) and (max-width: 415px) {
   #desc-input {
     padding-left: 2.7em;
+  }
+
+  #google-autocomplete {
+    margin-top: 6%
   }
 } 
 
