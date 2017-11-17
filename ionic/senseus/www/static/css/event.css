@@ -319,9 +319,10 @@ border-color: red;
   font-size: 14px;
 }
 
-.flex-row, .p0 {
+/*fixes event review squashed rows*/
+/*.flex-row, .p0 {
   padding:0;
-}
+}*/
 
 .pl1, #event-type-container .item-content {
   padding-left: 1%;
