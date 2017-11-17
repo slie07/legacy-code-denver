@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href='static/css/home.css'>
+    <script src="static/js/user.js"></script>
+    <script src="static/js/lib/jquery.min.js"></script>
+    <script src='static/js/home.js'></script>
+    <script src='static/js/url.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#fake-facebook-signin-container img').click(function(event){
+            FB.login(function(response) {
+                checkLoginState();
+            });
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div id="main-window">
+    <div id="welcome-title"><img src='static/images/senseus.png'></img></div>
+    <div id="google-signin-container" class='signin-container'>
+      <div id="gSignInWrapper">
+        <div id="customBtn" class="customGPlusSignIn">
+          <img src='static/images/cut_google.png'></img>
+        </div>
+      </div>
+      <script>
+      startApp();
+      </script>
+    </div>
+    <div id='fake-facebook-signin-container' class='signin-container'><img src='static/images/cut_facebook.png'></img></div>
+    <div id='or-line'>
+      <span>
+       &nbsp;or&nbsp;
+      </span>
+    </div>
+    <div id='name-signin-container' class='signin-container'>
+    <div id='name-input-wrapper'>
+    <input id='name' type='text' placeholder='Enter your name' autocomplete='off' oninput="toggleInputOk()"></input><div onclick="window.location.replace('profile.html');" id='name-input-ok'>ok</div></div>
+    </div>
+    </div>
+  </body>
+</html>

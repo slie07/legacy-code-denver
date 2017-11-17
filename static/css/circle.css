@@ -1,0 +1,47 @@
+#create-circle-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+#circle-name {
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+
+#circle-members-title {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+
+}
+#circle-members {
+    width: 100%;
+    height: 7%;
+    display: flex;
+}
+#create-circle-div {
+    display: flex;
+    align-self: stretch;
+    height: 66%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#create-circle-button {
+    display: flex;
+    align-self: flex-end;
+    height: 13%;
+    width: 50%;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+    margin-bottom: 2%;
+}

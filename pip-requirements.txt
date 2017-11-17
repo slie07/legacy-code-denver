@@ -1,0 +1,8 @@
+pyramid
+psycopg2
+jinja2
+xxhash
+oauth2client
+PyOpenSSL
+wsgicors
+hashids
