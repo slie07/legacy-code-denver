@@ -98,8 +98,10 @@
 }
 
 .flex-align-center {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 75px;
+    width: 75%;
 }
 .toggle input + .track {
 background-color: red;
@@ -174,10 +176,10 @@ border-color: red;
     justify-content: center;
 }
 
-.flex-align-center {
+/*.flex-align-center {
     display: flex;
     align-items: center;
-}
+}*/
 
 .event-col90 {
 	display: flex;
@@ -287,7 +289,8 @@ border-color: red;
 .flex-display-center {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center; 
+}
 
 .toggle input + .track {
   background-color: red;
@@ -311,7 +314,7 @@ border-color: red;
 }
 
 #event-name-container span, #event-name-container div , #event-name-container label {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 #event-name-container #senseus-header span{

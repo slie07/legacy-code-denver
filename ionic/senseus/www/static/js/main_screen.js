@@ -78,8 +78,3 @@ function loadFrontPage() {
     //document.getElementById("customizable-screen").innerHTML = first_time_string;
     //$('#bottom-nav-bar').hide();
 //}
-
-function findEvent() {
-    $('#extension').toggleClass('active');
-}
-

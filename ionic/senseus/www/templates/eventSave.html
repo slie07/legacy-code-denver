@@ -1,8 +1,8 @@
 <ion-header-bar id='senseus-header'>Event Review</ion-header-bar>
 <ion-content class='event-name-container' ng-controller="CreateEventCTRL">
-  <div id='event-area' class='flex-column w100 list'>
-		<div id='add-event-image-div'class='item flex-display-center flex-row w100'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image' style='margin-right:5%'></i><span>Add Image for Event</span></a></div>
-		<div class='flex-row item'></div>
+  <div id='event-area' class='flex-column w100 list flex-align-center'>
+		<div id='add-event-image-div' class='item flex-display-center flex-row w100 flex-align-center'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image' style='margin-right:5%'></i><span>Add Image for Event</span></a></div>
+		<div class='flex-row item flex-align-center'></div>
 		<div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
 		<div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
 		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-android-calendar" style="font-size:48px;"></i></span>{{getDates()}}</div>
