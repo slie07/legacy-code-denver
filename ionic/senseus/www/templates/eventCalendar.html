@@ -1,8 +1,9 @@
+
 <ion-header-bar id='senseus-header'>Event Times</ion-header-bar>
 <div id="timeTable" class='flex-display-center flex-row' ng-controller="CreateEventCalendarCTRL" ng-init="initHeader()">
 	<table id='day-header-table' class="table" style='table-layout:fixed;'>
 	<thead>
-	<tr>
+	<tr class= "phoneCal">
 	<th id='header-time-column'>
 		<div class='leftArrow' ng-click='changeTimeView(-1)'><i class='icon ion-arrow-left-c'></i></div>
         <div class=' rightArrow' ng-click='changeTimeView(1)'><i class='icon ion-arrow-right-c'></i></div>
