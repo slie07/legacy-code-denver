@@ -310,9 +310,10 @@ border-color: red;
   color: blue;
 }
 
-#event-name-container span, #event-name-container div , #event-name-container label {
+/*Font size correction*?
+/*#event-name-container span, #event-name-container div , #event-name-container label {
   font-size: 10px;
-}
+}*/
 
 #event-name-container #senseus-header span{
   font-size: 14px;
