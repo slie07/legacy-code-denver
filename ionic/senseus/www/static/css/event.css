@@ -338,3 +338,7 @@ border-color: red;
 .bar-footer .column .row {
   height: 50%;
   width: 100%; }
+
+  .review-rows {
+    padding: 15px;
+  }
