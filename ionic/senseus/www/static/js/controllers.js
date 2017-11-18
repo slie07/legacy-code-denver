@@ -202,7 +202,7 @@ angular.module('senseus.controllers', ["ui.bootstrap.modal"])
             */        
         }
         console.log("Clicked Time: "+hour+" "+day);
-    }
+    };
 
     $scope.clickedTimeDiv = function($event) {
 
